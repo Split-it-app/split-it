@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A93F261B1FDC562C00A142ED /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93F261A1FDC562C00A142ED /* Friend.swift */; };
-		A95BDA9A1FB3BA5500D1555A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95BDA991FB3BA5500D1555A /* AppDelegate.swift */; };
 		A95BDA9C1FB3BA5500D1555A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95BDA9B1FB3BA5500D1555A /* ViewController.swift */; };
 		A95BDA9F1FB3BA5500D1555A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95BDA9D1FB3BA5500D1555A /* Main.storyboard */; };
-		A95BDAA11FB3BA5500D1555A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95BDAA01FB3BA5500D1555A /* Assets.xcassets */; };
-		A95BDAA41FB3BA5500D1555A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95BDAA21FB3BA5500D1555A /* LaunchScreen.storyboard */; };
 		A95BDAAF1FB3BA5500D1555A /* Just_Split_ItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95BDAAE1FB3BA5500D1555A /* Just_Split_ItTests.swift */; };
 		A95BDABA1FB3BA5600D1555A /* Just_Split_ItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95BDAB91FB3BA5600D1555A /* Just_Split_ItUITests.swift */; };
 		A9607B991FDE047800ABDBEC /* friendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9607B981FDE047800ABDBEC /* friendCollectionViewCell.swift */; };
@@ -32,6 +29,11 @@
 		FD2837B51FDD0F7E00DD1F83 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */; };
 		FD2837B81FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */; };
 		FD4128651FDFB7BA00AAED05 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4128641FDFB7BA00AAED05 /* PictureViewController.swift */; };
+		FDCF103B1FE041F100606150 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDCF10371FE041F000606150 /* Info.plist */; };
+		FDCF103C1FE041F100606150 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FDCF10381FE041F000606150 /* Base.lproj */; };
+		FDCF103D1FE041F100606150 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF10391FE041F000606150 /* AppDelegate.swift */; };
+		FDCF103E1FE041F100606150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDCF103A1FE041F100606150 /* Assets.xcassets */; };
+		FDCF10421FE0437F00606150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDCF10401FE0437F00606150 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +59,8 @@
 		A93F261A1FDC562C00A142ED /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		A95AAFD41FE034010078ECF7 /* Split-it_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Split-it_Logo.png"; sourceTree = "<group>"; };
 		A95BDA961FB3BA5500D1555A /* Just Split It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just Split It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A95BDA991FB3BA5500D1555A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A95BDA9B1FB3BA5500D1555A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A95BDA9E1FB3BA5500D1555A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A95BDAA01FB3BA5500D1555A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A95BDAA31FB3BA5500D1555A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A95BDAA51FB3BA5500D1555A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A95BDAAA1FB3BA5500D1555A /* Just Split ItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Just Split ItTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95BDAAE1FB3BA5500D1555A /* Just_Split_ItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Just_Split_ItTests.swift; sourceTree = "<group>"; };
 		A95BDAB01FB3BA5500D1555A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +84,11 @@
 		FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupBillsTableViewController.swift; sourceTree = "<group>"; };
 		FD4128641FDFB7BA00AAED05 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		FDCF10371FE041F000606150 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
+		FDCF10381FE041F000606150 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = "Supporting Files/Base.lproj"; sourceTree = "<group>"; };
+		FDCF10391FE041F000606150 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Supporting Files/AppDelegate.swift"; sourceTree = "<group>"; };
+		FDCF103A1FE041F100606150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
+		FDCF10411FE0437F00606150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,12 +169,13 @@
 				A993CA751FC37D2C009E3E2F /* Item.swift */,
 				A93F261A1FDC562C00A142ED /* Friend.swift */,
 				FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */,
-				A95BDAA01FB3BA5500D1555A /* Assets.xcassets */,
-				A95BDA991FB3BA5500D1555A /* AppDelegate.swift */,
-				A95BDAA21FB3BA5500D1555A /* LaunchScreen.storyboard */,
-				A95BDAA51FB3BA5500D1555A /* Info.plist */,
+				FDCF10391FE041F000606150 /* AppDelegate.swift */,
+				FDCF103A1FE041F100606150 /* Assets.xcassets */,
+				FDCF10381FE041F000606150 /* Base.lproj */,
+				FDCF10371FE041F000606150 /* Info.plist */,
 				FD4128641FDFB7BA00AAED05 /* PictureViewController.swift */,
 				E54773071FDF19F800841CFD /* Supporting Files */,
+				FDCF10401FE0437F00606150 /* LaunchScreen.storyboard */,
 			);
 			path = "Just Split It";
 			sourceTree = "<group>";
@@ -209,10 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				E54773081FDF1A3A00841CFD /* tessdata */,
-				A95BDAA01FB3BA5500D1555A /* Assets.xcassets */,
-				A95BDA991FB3BA5500D1555A /* AppDelegate.swift */,
-				A95BDAA21FB3BA5500D1555A /* LaunchScreen.storyboard */,
-				A95BDAA51FB3BA5500D1555A /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -326,9 +326,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A95BDAA41FB3BA5500D1555A /* LaunchScreen.storyboard in Resources */,
 				E54773091FDF1A3A00841CFD /* tessdata in Resources */,
-				A95BDAA11FB3BA5500D1555A /* Assets.xcassets in Resources */,
+				FDCF103B1FE041F100606150 /* Info.plist in Resources */,
+				FDCF103E1FE041F100606150 /* Assets.xcassets in Resources */,
+				FDCF10421FE0437F00606150 /* LaunchScreen.storyboard in Resources */,
+				FDCF103C1FE041F100606150 /* Base.lproj in Resources */,
 				A95BDA9F1FB3BA5500D1555A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,7 +417,7 @@
 				A993CA721FC37AD2009E3E2F /* GroupBill.swift in Sources */,
 				FD2837B81FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift in Sources */,
 				FD2837B51FDD0F7E00DD1F83 /* CaptureViewController.swift in Sources */,
-				A95BDA9A1FB3BA5500D1555A /* AppDelegate.swift in Sources */,
+				FDCF103D1FE041F100606150 /* AppDelegate.swift in Sources */,
 				A9607B991FDE047800ABDBEC /* friendCollectionViewCell.swift in Sources */,
 				E57FE13F1FDEE1460015F391 /* itemListTableViewCell.swift in Sources */,
 				FD4128651FDFB7BA00AAED05 /* PictureViewController.swift in Sources */,
@@ -466,10 +468,10 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A95BDAA21FB3BA5500D1555A /* LaunchScreen.storyboard */ = {
+		FDCF10401FE0437F00606150 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A95BDAA31FB3BA5500D1555A /* Base */,
+				FDCF10411FE0437F00606150 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -590,7 +592,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VW8MPW778K;
+				DEVELOPMENT_TEAM = 76HA5S3YN4;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Just Split It/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -607,7 +609,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VW8MPW778K;
+				DEVELOPMENT_TEAM = 76HA5S3YN4;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/Just Split It/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

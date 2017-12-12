@@ -96,7 +96,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         billCell.textLabel?.text = model.groupBillArray[indexPath.row].getBillName()
         billCell.textLabel?.textColor = darkColor
         billCell.textLabel?.font = UIFont (name: "PingFangHK-Regular", size: 20)
-        billCell.detailTextLabel?.text = model.groupBillArray[indexPath.row].getDate()
+        //billCell.detailTextLabel?.text = model.groupBillArray[indexPath.row].getDate()
         billCell.detailTextLabel?.font = UIFont (name: "PingFangHK-Regular", size: 14)
         billCell.detailTextLabel?.textColor = darkColor
         billCell.backgroundColor = mintColor
