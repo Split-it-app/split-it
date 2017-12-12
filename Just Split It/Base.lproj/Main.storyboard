@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="billCell" id="fiC-Y7-Wdm">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="billCell" textLabel="2Dj-32-91Z" detailTextLabel="DYw-5X-OXM" style="IBUITableViewCellStyleValue1" id="fiC-Y7-Wdm">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fiC-Y7-Wdm" id="5uB-OZ-hsU">
@@ -37,10 +37,6 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="mNg-50-3pW" firstAttribute="leading" secondItem="5uB-OZ-hsU" secondAttribute="leadingMargin" constant="20" id="1Tb-5g-KwW"/>
-                                                <constraint firstItem="mNg-50-3pW" firstAttribute="centerY" secondItem="5uB-OZ-hsU" secondAttribute="centerY" id="czS-5V-1Dx"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="PNg-SV-6e6" kind="show" identifier="VCtoGroupBillVC" id="PgL-yr-8td"/>
@@ -295,7 +291,7 @@
                                                             <color key="backgroundColor" red="0.69982367316717609" green="1" blue="0.74289240632187348" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <connections>
                                                                 <outlet property="friendNameLabel" destination="TP9-gt-Tld" id="JZk-FF-2cc"/>
-                                                                <segue destination="lf7-sh-6eb" kind="show" id="xIl-IJ-bwW"/>
+                                                                <segue destination="lf7-sh-6eb" kind="show" identifier="GroupBillVCtoIndividualBillVC" id="xIl-IJ-bwW"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -340,32 +336,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="IndividItemTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xqT-MN-4ou">
-                                <rect key="frame" x="0.0" y="290" width="375" height="377"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="individBillLabel" text="Friend's Bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rI6-Lz-mdF">
+                                <rect key="frame" x="155" y="126" width="88" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="individItemCell" id="yJf-6u-ENo">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yJf-6u-ENo" id="9zl-Vn-8I1" customClass="itemListTableViewCell" customModule="Just_Split_It" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="lf7-sh-6eb" id="Hbk-LY-yh8"/>
-                                    <outlet property="delegate" destination="lf7-sh-6eb" id="VXh-na-Axg"/>
-                                </connections>
-                            </tableView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bCe-ch-hLt"/>
                     </view>
                     <connections>
-                        <outlet property="IndividItemTableView" destination="xqT-MN-4ou" id="atn-cY-6hN"/>
-                        <outlet property="ItemTableView" destination="xqT-MN-4ou" id="idw-jA-IsL"/>
+                        <outlet property="individBillLabel" destination="rI6-Lz-mdF" id="gG6-WI-jbh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AC3-Ij-wtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
