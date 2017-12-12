@@ -157,6 +157,7 @@
 				A95AAFD41FE034010078ECF7 /* Split-it_Logo.png */,
 				A95BDA9D1FB3BA5500D1555A /* Main.storyboard */,
 				E54773051FDF16EF00841CFD /* TesseractViewController.swift */,
+				FD4128641FDFB7BA00AAED05 /* PictureViewController.swift */,
 				A9947B071FDF04C900BA0E99 /* IndividualBillViewController.swift */,
 				A95BDA9B1FB3BA5500D1555A /* ViewController.swift */,
 				FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */,
@@ -173,7 +174,6 @@
 				FDCF103A1FE041F100606150 /* Assets.xcassets */,
 				FDCF10381FE041F000606150 /* Base.lproj */,
 				FDCF10371FE041F000606150 /* Info.plist */,
-				FD4128641FDFB7BA00AAED05 /* PictureViewController.swift */,
 				E54773071FDF19F800841CFD /* Supporting Files */,
 				FDCF10401FE0437F00606150 /* LaunchScreen.storyboard */,
 			);
