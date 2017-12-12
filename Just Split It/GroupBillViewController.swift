@@ -43,19 +43,27 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
         self.ItemTableView.backgroundColor = mintColor
     
     }
-    
+
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         // if tableView is the top table view (i.e. friend's list)
         if (tableView == self.FriendTableView){
             return "Friends" // only 1 category here
         }
         // if tableView is the bottom table view (i.e. items list)
-        else if (tableView == self.ItemTableView){
+        else {
             return groupBill.getBillName()
         }
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view:UIView, forSection: Int) {
+        let darkColor = UIColor(red: 59/255.0, green: 58/255.0, blue: 54/255.0, alpha: 1.0)
+        let frostColor = UIColor(red: 223/255.0, green: 236/255.0, blue: 229/255.0, alpha: 1.0)
         
-        else{
-            return "Price"
+        if let headerTitle = view as? UITableViewHeaderFooterView {
+            headerTitle.textLabel?.textColor = darkColor
+            headerTitle.textLabel?.font = UIFont(name: "PingFangHK-Medium", size: 20)
+            headerTitle.backgroundColor = frostColor
+            
         }
     }
     
@@ -70,6 +78,17 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
             showPrice = "Total $ \(totalPrice)"
         }
         return showPrice
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+        let darkColor = UIColor(red: 59/255.0, green: 58/255.0, blue: 54/255.0, alpha: 1.0)
+        let frostColor = UIColor(red: 223/255.0, green: 236/255.0, blue: 229/255.0, alpha: 1.0)
+        
+        if let footerTitle = view as? UITableViewHeaderFooterView {
+            footerTitle.textLabel?.textColor = darkColor
+            footerTitle.textLabel?.font = UIFont(name: "PingFangHK-Medium", size: 20)
+            footerTitle.backgroundColor = frostColor
+        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -115,19 +134,33 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
             
             let itemCell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! itemListTableViewCell
             
+            let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
+            let darkColor = UIColor(red: 59/255.0, green: 58/255.0, blue: 54/255.0, alpha: 1.0)
             
             itemCell.Title.text = itemsArray[indexPath.row].name
+            itemCell.Title.font = UIFont (name: "PingFangHK-Regular", size: 20)
+            itemCell.Title.textColor = darkColor
+            
             itemCell.Detail.text = "$" + itemsArray[indexPath.row].price.description
+            itemCell.Detail.font = UIFont (name: "PingFangHK-Regular", size: 20)
+            itemCell.Detail.textColor = darkColor
+            
+            itemCell.backgroundColor = mintColor
             
             //itemCell.textLabel?.text = itemsArray[indexPath.row].name
             //itemCell.detailTextLabel?.text = "$" + itemsArray[indexPath.row].price.description
             return itemCell
-        
+            
         } else {
             let friendListCell = tableView.dequeueReusableCell(withIdentifier: "friendListCell") as! CategoryRow
-            //friendListCell.textLabel?.text = "friend" //REMOVED because need to write friend name in collection view cell and NOT table view cell 
+            //friendListCell.textLabel?.text = "friend" //REMOVED because need to write friend name in collection view cell and NOT table view cell
             // transfer friends array to CategoryRow
             friendListCell.friendArray = self.friendsArray
+            
+            let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
+            
+            friendListCell.backgroundColor = mintColor
+            
             return friendListCell
         }
         
