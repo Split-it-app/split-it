@@ -31,6 +31,7 @@
 		E57FE13F1FDEE1460015F391 /* itemListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FE13E1FDEE1460015F391 /* itemListTableViewCell.swift */; };
 		FD2837B51FDD0F7E00DD1F83 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */; };
 		FD2837B81FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */; };
+		FD4128651FDFB7BA00AAED05 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4128641FDFB7BA00AAED05 /* PictureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		E57FE13E1FDEE1460015F391 /* itemListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemListTableViewCell.swift; sourceTree = "<group>"; };
 		FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupBillsTableViewController.swift; sourceTree = "<group>"; };
+		FD4128641FDFB7BA00AAED05 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,11 @@
 				A993CA751FC37D2C009E3E2F /* Item.swift */,
 				A93F261A1FDC562C00A142ED /* Friend.swift */,
 				FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */,
+				A95BDAA01FB3BA5500D1555A /* Assets.xcassets */,
+				A95BDA991FB3BA5500D1555A /* AppDelegate.swift */,
+				A95BDAA21FB3BA5500D1555A /* LaunchScreen.storyboard */,
+				A95BDAA51FB3BA5500D1555A /* Info.plist */,
+				FD4128641FDFB7BA00AAED05 /* PictureViewController.swift */,
 				E54773071FDF19F800841CFD /* Supporting Files */,
 			);
 			path = "Just Split It";
@@ -411,6 +418,7 @@
 				A95BDA9A1FB3BA5500D1555A /* AppDelegate.swift in Sources */,
 				A9607B991FDE047800ABDBEC /* friendCollectionViewCell.swift in Sources */,
 				E57FE13F1FDEE1460015F391 /* itemListTableViewCell.swift in Sources */,
+				FD4128651FDFB7BA00AAED05 /* PictureViewController.swift in Sources */,
 				E51CE3871FDB2A01003DE21A /* CategoryRow.swift in Sources */,
 				E54773061FDF16EF00841CFD /* TesseractViewController.swift in Sources */,
 				A93F261B1FDC562C00A142ED /* Friend.swift in Sources */,

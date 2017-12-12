@@ -105,21 +105,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3x0-Kf-0PW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rV0-ED-Gcs">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6e-UL-if0">
+                                <rect key="frame" x="130" y="616" width="115" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Capture"/>
+                                <connections>
+                                    <action selector="onTapTakePhoto:" destination="Yo2-6n-WQF" eventType="touchUpInside" id="cas-3l-aWX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rV0-ED-Gcs" firstAttribute="leading" secondItem="sFl-mz-h2s" secondAttribute="leading" id="4VT-xV-Jv1"/>
+                            <constraint firstItem="7bb-iG-RL0" firstAttribute="bottom" secondItem="Q6e-UL-if0" secondAttribute="bottom" constant="20" id="FI6-G7-l7p"/>
+                            <constraint firstAttribute="trailing" secondItem="rV0-ED-Gcs" secondAttribute="trailing" id="FyQ-1W-p8t"/>
+                            <constraint firstItem="7bb-iG-RL0" firstAttribute="trailing" secondItem="Q6e-UL-if0" secondAttribute="trailing" constant="130" id="HSN-Y8-iuo"/>
+                            <constraint firstAttribute="bottom" secondItem="rV0-ED-Gcs" secondAttribute="bottom" id="MeK-D3-0Po"/>
+                            <constraint firstItem="Q6e-UL-if0" firstAttribute="leading" secondItem="7bb-iG-RL0" secondAttribute="leading" constant="130" id="RHd-mT-Rsz"/>
+                            <constraint firstItem="Q6e-UL-if0" firstAttribute="top" secondItem="7bb-iG-RL0" secondAttribute="top" constant="552" id="el1-Ka-V9W"/>
+                            <constraint firstItem="rV0-ED-Gcs" firstAttribute="top" secondItem="sFl-mz-h2s" secondAttribute="top" constant="64" id="vdY-nv-xZW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7bb-iG-RL0"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="3x0-Kf-0PW" id="zdY-WK-h1Q"/>
+                        <outlet property="captureButton" destination="Q6e-UL-if0" id="gfU-0U-iuk"/>
+                        <outlet property="previewView" destination="rV0-ED-Gcs" id="hMg-J1-el9"/>
+                        <segue destination="CBH-O1-37N" kind="show" identifier="showPictureSegue" id="Xk7-TP-Byg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gy8-n0-src" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937" y="-838"/>
+            <point key="canvasLocation" x="937" y="-840"/>
+        </scene>
+        <!--Picture View Controller-->
+        <scene sceneID="o8E-Lq-alg">
+            <objects>
+                <viewController id="CBH-O1-37N" customClass="PictureViewController" customModule="Just_Split_It" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BgR-Br-uSM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YR8-oJ-G5N">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hfr-PM-oBF" firstAttribute="bottom" secondItem="YR8-oJ-G5N" secondAttribute="bottom" id="3Oy-Qo-Tic"/>
+                            <constraint firstItem="hfr-PM-oBF" firstAttribute="trailing" secondItem="YR8-oJ-G5N" secondAttribute="trailing" id="JQV-5y-Kax"/>
+                            <constraint firstItem="YR8-oJ-G5N" firstAttribute="top" secondItem="hfr-PM-oBF" secondAttribute="top" id="mCm-tY-O60"/>
+                            <constraint firstItem="YR8-oJ-G5N" firstAttribute="leading" secondItem="hfr-PM-oBF" secondAttribute="leading" id="nD9-0e-IdI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hfr-PM-oBF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jzc-03-qg4">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="0Sp-29-k7W">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hrM-bV-DX3">
+                                <rect key="frame" x="302" y="5.5" width="57" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Digitize"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="YR8-oJ-G5N" id="79S-aR-rWp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SCV-6a-Wfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768.8" y="-839.73013493253382"/>
         </scene>
         <!--Group Bill View Controller-->
         <scene sceneID="wKj-vN-Mwf">
