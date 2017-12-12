@@ -28,12 +28,12 @@
 		E57FE13F1FDEE1460015F391 /* itemListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FE13E1FDEE1460015F391 /* itemListTableViewCell.swift */; };
 		FD2837B51FDD0F7E00DD1F83 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */; };
 		FD2837B81FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */; };
-		FD4128651FDFB7BA00AAED05 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4128641FDFB7BA00AAED05 /* PictureViewController.swift */; };
 		FDCF103B1FE041F100606150 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDCF10371FE041F000606150 /* Info.plist */; };
 		FDCF103C1FE041F100606150 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FDCF10381FE041F000606150 /* Base.lproj */; };
 		FDCF103D1FE041F100606150 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF10391FE041F000606150 /* AppDelegate.swift */; };
 		FDCF103E1FE041F100606150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDCF103A1FE041F100606150 /* Assets.xcassets */; };
 		FDCF10421FE0437F00606150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDCF10401FE0437F00606150 /* LaunchScreen.storyboard */; };
+		FDCF10441FE04FC700606150 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF10431FE04FC700606150 /* PictureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,12 +83,12 @@
 		E57FE13E1FDEE1460015F391 /* itemListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemListTableViewCell.swift; sourceTree = "<group>"; };
 		FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupBillsTableViewController.swift; sourceTree = "<group>"; };
-		FD4128641FDFB7BA00AAED05 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		FDCF10371FE041F000606150 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		FDCF10381FE041F000606150 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = "Supporting Files/Base.lproj"; sourceTree = "<group>"; };
 		FDCF10391FE041F000606150 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Supporting Files/AppDelegate.swift"; sourceTree = "<group>"; };
 		FDCF103A1FE041F100606150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
 		FDCF10411FE0437F00606150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDCF10431FE04FC700606150 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PictureViewController.swift; path = "/Users/muhammadjoyo/Desktop/Classes/iOS Programming/Final Project/Just Split It/Just Split It/PictureViewController.swift"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,10 +154,10 @@
 		A95BDA981FB3BA5500D1555A /* Just Split It */ = {
 			isa = PBXGroup;
 			children = (
+				FDCF10431FE04FC700606150 /* PictureViewController.swift */,
 				A95AAFD41FE034010078ECF7 /* Split-it_Logo.png */,
 				A95BDA9D1FB3BA5500D1555A /* Main.storyboard */,
 				E54773051FDF16EF00841CFD /* TesseractViewController.swift */,
-				FD4128641FDFB7BA00AAED05 /* PictureViewController.swift */,
 				A9947B071FDF04C900BA0E99 /* IndividualBillViewController.swift */,
 				A95BDA9B1FB3BA5500D1555A /* ViewController.swift */,
 				FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */,
@@ -414,13 +414,13 @@
 				A993CA761FC37D2C009E3E2F /* Item.swift in Sources */,
 				A95BDA9C1FB3BA5500D1555A /* ViewController.swift in Sources */,
 				E51CE3891FDB35C3003DE21A /* ModelClass.swift in Sources */,
+				FDCF10441FE04FC700606150 /* PictureViewController.swift in Sources */,
 				A993CA721FC37AD2009E3E2F /* GroupBill.swift in Sources */,
 				FD2837B81FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift in Sources */,
 				FD2837B51FDD0F7E00DD1F83 /* CaptureViewController.swift in Sources */,
 				FDCF103D1FE041F100606150 /* AppDelegate.swift in Sources */,
 				A9607B991FDE047800ABDBEC /* friendCollectionViewCell.swift in Sources */,
 				E57FE13F1FDEE1460015F391 /* itemListTableViewCell.swift in Sources */,
-				FD4128651FDFB7BA00AAED05 /* PictureViewController.swift in Sources */,
 				E51CE3871FDB2A01003DE21A /* CategoryRow.swift in Sources */,
 				E54773061FDF16EF00841CFD /* TesseractViewController.swift in Sources */,
 				A93F261B1FDC562C00A142ED /* Friend.swift in Sources */,

@@ -11,46 +11,48 @@ import TesseractOCR
 
 class PictureViewController: UIViewController {
 	
+	@IBOutlet weak var digitizeButton: UIButton!
 	@IBOutlet weak var imageView: UIImageView!
 	
 	//Variable that's going to receive the UIImage
-	var capturedImageRef = UIImage()
+	var capturedImageRef: UIImage!
+	var rawTextData: String!
     
     
     // Tesseract Image Recognition
     func performImageRecognition(_ image: UIImage) {
         if let tesseract = G8Tesseract(language: "eng+fra") {
-            // 2
+            //Set tesseract mode to Cube combined (slowest but also the most accurate)
             tesseract.engineMode = .tesseractCubeCombined
-            // 3
+            //Set mode so that it recognizes paragraph breaks
             tesseract.pageSegmentationMode = .auto
-            // 4
+            //Filter the image to make it easier to read
             tesseract.image = image.g8_blackAndWhite()
-            // 5
+            //Recognize text in the image
             tesseract.recognize()
-            // 6
+            //Print raw text
             print (tesseract.recognizedText)
+			//Save raw text
+			rawTextData = tesseract.recognizedText
         }
     }
-    
-    
-    
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		//Set image to the imageView
 		imageView.image = capturedImageRef
-        
-        let scaledImage = imageView.image?.scaleImage(640)
-        
-        performImageRecognition(scaledImage!)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+	
+	@IBAction func onDigitizeClicked() {
+		//Scale image to get the best results
+		let scaledImage = imageView.image?.scaleImage(640)
+		performImageRecognition(scaledImage!)
+	}
 
 }
 
