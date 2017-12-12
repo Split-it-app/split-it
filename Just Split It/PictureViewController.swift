@@ -13,7 +13,6 @@ class PictureViewController: UIViewController {
 	
 	@IBOutlet weak var digitizeButton: UIButton!
 	@IBOutlet weak var imageView: UIImageView!
-	@IBOutlet weak var loading: UIActivityIndicatorView!
 	
 	//Variable that's going to receive the UIImage
 	var capturedImageRef: UIImage!
@@ -42,7 +41,6 @@ class PictureViewController: UIViewController {
         super.viewDidLoad()
 		//Set image to the imageView
 		imageView.image = capturedImageRef
-		view.addSubview(loading)
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,15 +49,9 @@ class PictureViewController: UIViewController {
     }
 	
 	@IBAction func onDigitizeClicked() {
-		
-		
-		loading.startAnimating()
-		
 		//Scale image to get the best results
 		let scaledImage = imageView.image?.scaleImage(640)
 		performImageRecognition(scaledImage!)
-		
-		loading.stopAnimating()
 		
 		//Segue to next view
 		self.performSegue(withIdentifier: "showRawDataSegue", sender: self)

@@ -35,6 +35,7 @@
 		FDCF10421FE0437F00606150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDCF10401FE0437F00606150 /* LaunchScreen.storyboard */; };
 		FDCF10441FE04FC700606150 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF10431FE04FC700606150 /* PictureViewController.swift */; };
 		FDCF10461FE0591300606150 /* RawDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF10451FE0591300606150 /* RawDataViewController.swift */; };
+		FDCF10481FE069F900606150 /* Split-it_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCF10471FE069F800606150 /* Split-it_Logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +59,6 @@
 		0ECA137AFC0BC366925095C3 /* Pods-Just Split It.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Just Split It.release.xcconfig"; path = "Pods/Target Support Files/Pods-Just Split It/Pods-Just Split It.release.xcconfig"; sourceTree = "<group>"; };
 		63F7E725499650174E930C74 /* Pods-Just Split It.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Just Split It.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Just Split It/Pods-Just Split It.debug.xcconfig"; sourceTree = "<group>"; };
 		A93F261A1FDC562C00A142ED /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
-		A95AAFD41FE034010078ECF7 /* Split-it_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Split-it_Logo.png"; sourceTree = "<group>"; };
 		A95BDA961FB3BA5500D1555A /* Just Split It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just Split It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95BDA9B1FB3BA5500D1555A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A95BDA9E1FB3BA5500D1555A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +91,7 @@
 		FDCF10411FE0437F00606150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDCF10431FE04FC700606150 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PictureViewController.swift; path = "/Users/muhammadjoyo/Desktop/Classes/iOS Programming/Final Project/Just Split It/Just Split It/PictureViewController.swift"; sourceTree = "<absolute>"; };
 		FDCF10451FE0591300606150 /* RawDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawDataViewController.swift; sourceTree = "<group>"; };
+		FDCF10471FE069F800606150 /* Split-it_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Split-it_Logo.png"; path = "Supporting Files/Assets.xcassets/Split-it_Logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				FDCF10431FE04FC700606150 /* PictureViewController.swift */,
-				A95AAFD41FE034010078ECF7 /* Split-it_Logo.png */,
 				A95BDA9D1FB3BA5500D1555A /* Main.storyboard */,
 				FDCF10451FE0591300606150 /* RawDataViewController.swift */,
 				E54773051FDF16EF00841CFD /* TesseractViewController.swift */,
@@ -175,6 +175,7 @@
 				FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */,
 				FDCF10391FE041F000606150 /* AppDelegate.swift */,
 				FDCF103A1FE041F100606150 /* Assets.xcassets */,
+				FDCF10471FE069F800606150 /* Split-it_Logo.png */,
 				FDCF10381FE041F000606150 /* Base.lproj */,
 				FDCF10371FE041F000606150 /* Info.plist */,
 				E54773071FDF19F800841CFD /* Supporting Files */,
@@ -331,6 +332,7 @@
 			files = (
 				E54773091FDF1A3A00841CFD /* tessdata in Resources */,
 				FDCF103B1FE041F100606150 /* Info.plist in Resources */,
+				FDCF10481FE069F900606150 /* Split-it_Logo.png in Resources */,
 				FDCF103E1FE041F100606150 /* Assets.xcassets in Resources */,
 				FDCF10421FE0437F00606150 /* LaunchScreen.storyboard in Resources */,
 				FDCF103C1FE041F100606150 /* Base.lproj in Resources */,
