@@ -14,7 +14,7 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBOutlet weak var FriendTableView: UITableView!
     @IBOutlet weak var ItemTableView: UITableView!
-    @IBOutlet weak var priceTableView: UITableView!
+    //@IBOutlet weak var priceTableView: UITableView!
     
     
     var model:ModelClass = ModelClass()
@@ -36,6 +36,11 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
         friendsArray = groupBill.getFriendArray()
         
         print("friend count: " + friendsArray.count.description)
+        
+        let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
+        self.view.backgroundColor = mintColor
+        self.FriendTableView.backgroundColor = mintColor
+        self.ItemTableView.backgroundColor = mintColor
     
     }
     
