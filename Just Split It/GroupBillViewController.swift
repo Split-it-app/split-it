@@ -112,7 +112,7 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
             
             
             itemCell.Title.text = itemsArray[indexPath.row].name
-            itemCell.Detail.text = "$ " + itemsArray[indexPath.row].price.description
+            itemCell.Detail.text = "$" + itemsArray[indexPath.row].price.description
             
             //itemCell.textLabel?.text = itemsArray[indexPath.row].name
             //itemCell.detailTextLabel?.text = "$" + itemsArray[indexPath.row].price.description
@@ -164,12 +164,9 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
 
     
     // transfer individual bill to IndividualBillVC
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "GroupBillVCtoIndividualBillVC"){
-            let IndividBillVC = segue.destination as! IndividualBillViewController
             
-            //IndividBillVC.individBillLabel.text =  friendCell.friendName + "'s Bill"
         }
     }
     

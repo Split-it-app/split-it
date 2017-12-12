@@ -10,6 +10,7 @@ import UIKit
 class Friend: NSObject {
     var name:String
     
+    
     override init(){
         name = ""
         
