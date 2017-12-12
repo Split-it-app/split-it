@@ -35,6 +35,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         friend3.name = "WJ"
         let friend4 = Friend()
         friend4.name = "Hull"
+        let friend5 = Friend()
+        friend5.name = "MC"
         groupBill1.addItem(item: item1)
         groupBill1.addItem(item: item2)
         groupBill1.addItem(item: item3)
@@ -43,6 +45,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         groupBill1.addFriend(friend: friend2)
         groupBill1.addFriend(friend: friend3)
         groupBill1.addFriend(friend: friend4)
+        groupBill1.addFriend(friend: friend5)
         groupBill1.setDate(date: "11/14/17")
         groupBill2.setDate(date: "10/31/17")
         groupBill3.setDate(date: "06/21/17")
