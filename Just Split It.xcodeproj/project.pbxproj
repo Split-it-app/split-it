@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A93B528A1FE055FD00DB9861 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B52891FE055FD00DB9861 /* PictureViewController.swift */; };
 		A93F261B1FDC562C00A142ED /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93F261A1FDC562C00A142ED /* Friend.swift */; };
 		A95BDA9C1FB3BA5500D1555A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95BDA9B1FB3BA5500D1555A /* ViewController.swift */; };
 		A95BDA9F1FB3BA5500D1555A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95BDA9D1FB3BA5500D1555A /* Main.storyboard */; };
@@ -29,14 +28,14 @@
 		E57FE13F1FDEE1460015F391 /* itemListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FE13E1FDEE1460015F391 /* itemListTableViewCell.swift */; };
 		FD2837B51FDD0F7E00DD1F83 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */; };
 		FD2837B81FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */; };
+		FD6CE2271FE078A7000EE977 /* Split-it_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FD6CE2261FE078A6000EE977 /* Split-it_Logo.png */; };
 		FDCF103B1FE041F100606150 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDCF10371FE041F000606150 /* Info.plist */; };
 		FDCF103C1FE041F100606150 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FDCF10381FE041F000606150 /* Base.lproj */; };
 		FDCF103D1FE041F100606150 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF10391FE041F000606150 /* AppDelegate.swift */; };
 		FDCF103E1FE041F100606150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDCF103A1FE041F100606150 /* Assets.xcassets */; };
 		FDCF10421FE0437F00606150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDCF10401FE0437F00606150 /* LaunchScreen.storyboard */; };
-		FDCF10441FE04FC700606150 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF10431FE04FC700606150 /* PictureViewController.swift */; };
 		FDCF10461FE0591300606150 /* RawDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF10451FE0591300606150 /* RawDataViewController.swift */; };
-		FDCF10481FE069F900606150 /* Split-it_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCF10471FE069F800606150 /* Split-it_Logo.png */; };
+		FDCF10531FE0750A00606150 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF10521FE0750A00606150 /* PictureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,14 +85,14 @@
 		E57FE13E1FDEE1460015F391 /* itemListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemListTableViewCell.swift; sourceTree = "<group>"; };
 		FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupBillsTableViewController.swift; sourceTree = "<group>"; };
-		FDCF10371FE041F000606150 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
+		FD6CE2261FE078A6000EE977 /* Split-it_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Split-it_Logo.png"; path = "Assets.xcassets/Split-it_Logo.png"; sourceTree = "<group>"; };
+		FDCF10371FE041F000606150 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDCF10381FE041F000606150 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = "Supporting Files/Base.lproj"; sourceTree = "<group>"; };
 		FDCF10391FE041F000606150 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Supporting Files/AppDelegate.swift"; sourceTree = "<group>"; };
-		FDCF103A1FE041F100606150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
+		FDCF103A1FE041F100606150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDCF10411FE0437F00606150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FDCF10431FE04FC700606150 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PictureViewController.swift; path = "/Users/muhammadjoyo/Desktop/Classes/iOS Programming/Final Project/Just Split It/Just Split It/PictureViewController.swift"; sourceTree = "<absolute>"; };
 		FDCF10451FE0591300606150 /* RawDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawDataViewController.swift; sourceTree = "<group>"; };
-		FDCF10471FE069F800606150 /* Split-it_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Split-it_Logo.png"; path = "Supporting Files/Assets.xcassets/Split-it_Logo.png"; sourceTree = "<group>"; };
+		FDCF10521FE0750A00606150 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +142,7 @@
 				A95BDA971FB3BA5500D1555A /* Products */,
 				9D7602E34C0FB24A23A6BC84 /* Pods */,
 				E1E6DE2621D9F67FC670D1F5 /* Frameworks */,
+				FDCF10491FE06AAC00606150 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,7 +159,7 @@
 		A95BDA981FB3BA5500D1555A /* Just Split It */ = {
 			isa = PBXGroup;
 			children = (
-				FDCF10431FE04FC700606150 /* PictureViewController.swift */,
+				FDCF10521FE0750A00606150 /* PictureViewController.swift */,
 				A95BDA9D1FB3BA5500D1555A /* Main.storyboard */,
 				FDCF10451FE0591300606150 /* RawDataViewController.swift */,
 				E54773051FDF16EF00841CFD /* TesseractViewController.swift */,
@@ -176,10 +176,7 @@
 				A93F261A1FDC562C00A142ED /* Friend.swift */,
 				FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */,
 				FDCF10391FE041F000606150 /* AppDelegate.swift */,
-				FDCF103A1FE041F100606150 /* Assets.xcassets */,
-				FDCF10471FE069F800606150 /* Split-it_Logo.png */,
 				FDCF10381FE041F000606150 /* Base.lproj */,
-				FDCF10371FE041F000606150 /* Info.plist */,
 				E54773071FDF19F800841CFD /* Supporting Files */,
 				FDCF10401FE0437F00606150 /* LaunchScreen.storyboard */,
 			);
@@ -218,9 +215,20 @@
 		E54773071FDF19F800841CFD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FDCF10371FE041F000606150 /* Info.plist */,
+				FDCF103A1FE041F100606150 /* Assets.xcassets */,
+				FD6CE2261FE078A6000EE977 /* Split-it_Logo.png */,
 				E54773081FDF1A3A00841CFD /* tessdata */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDCF10491FE06AAC00606150 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				A93B52891FE055FD00DB9861 /* PictureViewController.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +342,7 @@
 			files = (
 				E54773091FDF1A3A00841CFD /* tessdata in Resources */,
 				FDCF103B1FE041F100606150 /* Info.plist in Resources */,
-				FDCF10481FE069F900606150 /* Split-it_Logo.png in Resources */,
+				FD6CE2271FE078A7000EE977 /* Split-it_Logo.png in Resources */,
 				FDCF103E1FE041F100606150 /* Assets.xcassets in Resources */,
 				FDCF10421FE0437F00606150 /* LaunchScreen.storyboard in Resources */,
 				FDCF103C1FE041F100606150 /* Base.lproj in Resources */,
@@ -418,7 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9947B081FDF04C900BA0E99 /* IndividualBillViewController.swift in Sources */,
-				A93B528A1FE055FD00DB9861 /* PictureViewController.swift in Sources */,
+				FDCF10531FE0750A00606150 /* PictureViewController.swift in Sources */,
 				A993CA761FC37D2C009E3E2F /* Item.swift in Sources */,
 				A95BDA9C1FB3BA5500D1555A /* ViewController.swift in Sources */,
 				E51CE3891FDB35C3003DE21A /* ModelClass.swift in Sources */,

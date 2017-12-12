@@ -130,7 +130,7 @@
                     <connections>
                         <outlet property="captureButton" destination="Q6e-UL-if0" id="gfU-0U-iuk"/>
                         <outlet property="previewView" destination="rV0-ED-Gcs" id="hMg-J1-el9"/>
-                        <segue destination="CBH-O1-37N" kind="show" identifier="showPictureSegue" id="Xk7-TP-Byg"/>
+                        <segue destination="zik-DV-RS0" kind="show" identifier="showPictureSegue" id="42P-Mn-AOd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gy8-n0-src" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -138,34 +138,40 @@
             <point key="canvasLocation" x="937" y="-840"/>
         </scene>
         <!--Picture View Controller-->
-        <scene sceneID="o8E-Lq-alg">
+        <scene sceneID="7a9-uE-CiO">
             <objects>
-                <viewController id="CBH-O1-37N" customClass="PictureViewController" customModule="Just_Split_It" customModuleProvider="target" sceneMemberID="viewController">
-                    <activityIndicatorView key="view" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="i4F-oM-h08">
+                <viewController id="zik-DV-RS0" customClass="PictureViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LXP-ZF-Tw2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </activityIndicatorView>
-                    <navigationItem key="navigationItem" id="jzc-03-qg4">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="0Sp-29-k7W">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hrM-bV-DX3">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Urd-yl-W6o">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="PFo-dX-mLv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="w7d-6h-yBO">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="6ST-V6-u1N">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9Ue-Be-OtH">
                                 <rect key="frame" x="302" y="5.5" width="57" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Digitize"/>
-                                <connections>
-                                    <action selector="onDigitizeClicked" destination="CBH-O1-37N" eventType="touchUpInside" id="rca-f2-iL8"/>
-                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="digitizeButton" destination="hrM-bV-DX3" id="qIb-gF-EPL"/>
-                        <segue destination="0lb-D8-CW4" kind="show" identifier="showRawDataSegue" id="5sG-Ft-KQ8"/>
+                        <outlet property="digitizeButton" destination="9Ue-Be-OtH" id="MfG-aR-qcp"/>
+                        <outlet property="imageView" destination="Urd-yl-W6o" id="Qeb-rb-JGM"/>
+                        <segue destination="0lb-D8-CW4" kind="show" identifier="showRawDataSegue" id="RVj-H8-d2b"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SCV-6a-Wfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oHa-f3-BFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1745" y="-841"/>
+            <point key="canvasLocation" x="1744.8" y="-841.52923538230891"/>
         </scene>
         <!--Raw Data View Controller-->
         <scene sceneID="KWM-zf-lF1">
