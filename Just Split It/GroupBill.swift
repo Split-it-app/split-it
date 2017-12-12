@@ -11,7 +11,6 @@ class GroupBill: NSObject {
     var name:String = ""
     var itemArray: [Item] = [Item]()
     var friendArray: [Friend] = [Friend]()
-    var date:String = ""
     
     override init(){
         name = ""
@@ -39,11 +38,6 @@ class GroupBill: NSObject {
         friendArray.append(friend)
     }
     
-    //add date of bill
-    func addDate(date: String){
-        self.date = date 
-    }
-    
     // getters functions
     func getBillName() -> String{
         return self.name
@@ -55,10 +49,6 @@ class GroupBill: NSObject {
     
     func getFriendArray() -> [Friend]{
         return self.friendArray
-    }
-    
-    func getDate() -> String{
-        return self.date
     }
 }
 

@@ -27,8 +27,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let item2 = Item(name: "coca cola", price: 3)
         let item3 = Item(name: "sprite", price: 4)
         let item4 = Item(name: "hard drugs", price: 5)
-        let tip = Item(name: "tip", price: 3)
-        let tax = Item(name: "tax", price: 2)
         let friend1 = Friend()
         friend1.name = "MB"
         let friend2 = Friend()
@@ -37,20 +35,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         friend3.name = "WJ"
         let friend4 = Friend()
         friend4.name = "Hull"
-        let friend5 = Friend()
-        friend5.name = "MC"
         groupBill1.addItem(item: item1)
         groupBill1.addItem(item: item2)
         groupBill1.addItem(item: item3)
         groupBill1.addItem(item: item4)
-        groupBill1.addItem(item: tip)
-        groupBill1.addItem(item: tax)
-        groupBill1.addDate(date: "11/14/2017")
         groupBill1.addFriend(friend: friend1)
         groupBill1.addFriend(friend: friend2)
         groupBill1.addFriend(friend: friend3)
         groupBill1.addFriend(friend: friend4)
-        groupBill1.addFriend(friend: friend5)
         
         let John = Friend()
         John.name = "John"
@@ -58,14 +50,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         Peter.name = "Peter"
         groupBill2.addFriend(friend: John)
         groupBill2.addFriend(friend: Peter)
-        groupBill2.addDate(date: "05/24/2017")
         let Emily = Friend()
         Emily.name = "Emily"
         let Jessica = Friend()
         Jessica.name = "Jessica"
         groupBill3.addFriend(friend: Emily)
         groupBill3.addFriend(friend: Jessica)
-        groupBill3.addDate(date: "1/1/2016")
         
         //let model:ModelClass = ModelClass()
         //model = ModelClass()
@@ -91,11 +81,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // let billCell = tableView.dequeueReusableCell(withIdentifier: "billCell", for: indexPath)
-        let billCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "billCell")
-        //let billCell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "billCell")
+        let billCell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "billCell")
         billCell.textLabel?.text = model.groupBillArray[indexPath.row].getBillName()
-        billCell.detailTextLabel?.text = model.groupBillArray[indexPath.row].getDate()
         return billCell
     }
     
@@ -119,6 +106,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             GroupBillVC.groupBill =  model.groupBillArray[row]
         }
     }
+    
+
+    
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
