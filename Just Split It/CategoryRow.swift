@@ -30,9 +30,16 @@ class CategoryRow: UITableViewCell, UICollectionViewDataSource, UICollectionView
         //let friend = friendArray[indexPath.row];
        // friendCellCollection.friendName = friend.name
     
-        let lavenderColor = UIColor(red: 176/255.0, green: 170/255.0, blue: 194/255.0, alpha: 1.0)
+        //let lavenderColor = UIColor(red: 176/255.0, green: 170/255.0, blue: 194/255.0, alpha: 1.0)
+        
+        //Want 4 different colors for the labels
+        let salmonColor = UIColor(red: 250/255.0, green: 124/255.0, blue: 146/255.0, alpha: 1.0)
+        let rainColor = UIColor(red: 110/255.0, green: 196/255.0, blue: 219/255.0, alpha: 1.0)
+        let buttermilkColor = UIColor(red: 255/255.0, green: 247/255.0, blue: 192/255.0, alpha: 1.0)
+        let leafColor = UIColor(red: 102/255.0, green: 171/255.0, blue: 140/255.0, alpha: 1.0)
+        
    
-        friendCellCollection.backgroundColor = lavenderColor
+        friendCellCollection.backgroundColor = salmonColor
         friendCellCollection.friendNameFont = UIFont (name: "PingFangHK-Regular", size: 20)!
         
         return friendCellCollection
@@ -41,14 +48,14 @@ class CategoryRow: UITableViewCell, UICollectionViewDataSource, UICollectionView
     // extension: UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let mintColor2 = UIColor(red: 219/255.0, green: 233/255.0, blue: 216/255.0, alpha: 1.0)
-        //let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
+        //let mintColor2 = UIColor(red: 219/255.0, green: 233/255.0, blue: 216/255.0, alpha: 1.0)
+        let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
         
         let itemsPerRow: CGFloat = 4
         let hardCodedPadding: CGFloat = 5
         let itemWidth = (collectionView.bounds.width/itemsPerRow) - hardCodedPadding
         let itemHeight = collectionView.bounds.height - (2*hardCodedPadding)
-        collectionView.backgroundColor = mintColor2
+        collectionView.backgroundColor = mintColor
         return CGSize(width: itemWidth, height: itemHeight)
     }
     
