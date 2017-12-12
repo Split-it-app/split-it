@@ -34,6 +34,7 @@
 		FDCF103E1FE041F100606150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDCF103A1FE041F100606150 /* Assets.xcassets */; };
 		FDCF10421FE0437F00606150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDCF10401FE0437F00606150 /* LaunchScreen.storyboard */; };
 		FDCF10441FE04FC700606150 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF10431FE04FC700606150 /* PictureViewController.swift */; };
+		FDCF10461FE0591300606150 /* RawDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF10451FE0591300606150 /* RawDataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		FDCF103A1FE041F100606150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
 		FDCF10411FE0437F00606150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDCF10431FE04FC700606150 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PictureViewController.swift; path = "/Users/muhammadjoyo/Desktop/Classes/iOS Programming/Final Project/Just Split It/Just Split It/PictureViewController.swift"; sourceTree = "<absolute>"; };
+		FDCF10451FE0591300606150 /* RawDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawDataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				FDCF10431FE04FC700606150 /* PictureViewController.swift */,
 				A95AAFD41FE034010078ECF7 /* Split-it_Logo.png */,
 				A95BDA9D1FB3BA5500D1555A /* Main.storyboard */,
+				FDCF10451FE0591300606150 /* RawDataViewController.swift */,
 				E54773051FDF16EF00841CFD /* TesseractViewController.swift */,
 				A9947B071FDF04C900BA0E99 /* IndividualBillViewController.swift */,
 				A95BDA9B1FB3BA5500D1555A /* ViewController.swift */,
@@ -419,6 +422,7 @@
 				FD2837B81FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift in Sources */,
 				FD2837B51FDD0F7E00DD1F83 /* CaptureViewController.swift in Sources */,
 				FDCF103D1FE041F100606150 /* AppDelegate.swift in Sources */,
+				FDCF10461FE0591300606150 /* RawDataViewController.swift in Sources */,
 				A9607B991FDE047800ABDBEC /* friendCollectionViewCell.swift in Sources */,
 				E57FE13F1FDEE1460015F391 /* itemListTableViewCell.swift in Sources */,
 				E51CE3871FDB2A01003DE21A /* CategoryRow.swift in Sources */,
