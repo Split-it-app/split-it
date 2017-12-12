@@ -27,6 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let item2 = Item(name: "coca cola", price: 3)
         let item3 = Item(name: "sprite", price: 4)
         let item4 = Item(name: "hard drugs", price: 5)
+        let tax = Item(name: "tax", price: 2)
         let friend1 = Friend()
         friend1.name = "MB"
         let friend2 = Friend()
@@ -41,6 +42,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         groupBill1.addItem(item: item2)
         groupBill1.addItem(item: item3)
         groupBill1.addItem(item: item4)
+        groupBill1.addItem(item: tax)
         groupBill1.addFriend(friend: friend1)
         groupBill1.addFriend(friend: friend2)
         groupBill1.addFriend(friend: friend3)

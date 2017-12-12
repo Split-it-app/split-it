@@ -23,6 +23,4 @@ class ModelClass: NSObject {
     func getCount() -> Int{
         return groupBillArray.count
     }
-    
-
 }
