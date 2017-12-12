@@ -63,7 +63,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         model.addBill(groupBill: groupBill2)
         model.addBill(groupBill: groupBill3)
         
-        
+        let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
+        let mintColor2 = UIColor(red: 219/255.0, green: 233/255.0, blue: 216/255.0, alpha: 1.0)
+        self.view.backgroundColor = mintColor
+        self.groupBillsTableView.backgroundColor = mintColor
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -81,8 +84,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let billCell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "billCell")
+        // let billCell = tableView.dequeueReusableCell(withIdentifier: "billCell", for: indexPath)
+        let billCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "billCell")
+        //let billCell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "billCell")
+      
+        let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
+        let mintColor2 = UIColor(red: 219/255.0, green: 233/255.0, blue: 216/255.0, alpha: 1.0)
+        let frostColor = UIColor(red: 233/255.0, green: 236/255.0, blue: 229/255.0, alpha: 1.0)
+        let darkColor = UIColor(red: 59/255.0, green: 58/255.0, blue: 54/255.0, alpha: 1.0)
+        
         billCell.textLabel?.text = model.groupBillArray[indexPath.row].getBillName()
+        billCell.textLabel?.textColor = darkColor
+        billCell.textLabel?.font = UIFont (name: "PingFangHK-Regular", size: 20)
+        billCell.detailTextLabel?.text = model.groupBillArray[indexPath.row].getDate()
+        billCell.detailTextLabel?.font = UIFont (name: "PingFangHK-Regular", size: 14)
+        billCell.detailTextLabel?.textColor = darkColor
+        billCell.backgroundColor = mintColor
         return billCell
     }
     
