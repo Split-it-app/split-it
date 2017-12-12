@@ -9,7 +9,7 @@ import UIKit
 
 class IndividualBillViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
-    @IBOutlet weak var IndividItemTableView: UITableView!
+  //@IBOutlet weak var IndividItemTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

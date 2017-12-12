@@ -11,9 +11,11 @@ class GroupBill: NSObject {
     var name:String = ""
     var itemArray: [Item] = [Item]()
     var friendArray: [Friend] = [Friend]()
+    var date:String = ""
     
     override init(){
         name = ""
+        date = ""
         
     }
     init (name: String){
@@ -22,6 +24,10 @@ class GroupBill: NSObject {
     
     func setName (name:String){
         self.name = name
+    }
+    
+    func setDate (date:String){
+        self.date = date
     }
     
     // add item to items list
