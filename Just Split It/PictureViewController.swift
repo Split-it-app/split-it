@@ -22,25 +22,24 @@ class PictureViewController: UIViewController {
     // Tesseract Image Recognition
     func performImageRecognition(_ image: UIImage) {
         if let tesseract = G8Tesseract(language: "eng+fra") {
-            // 2
+            //Set tesseract mode to Cube combined (slowest but also the most accurate)
             tesseract.engineMode = .tesseractCubeCombined
-            // 3
+            //Set mode so that it recognizes paragraph breaks
             tesseract.pageSegmentationMode = .auto
-            // 4
+            //Filter the image to make it easier to read
             tesseract.image = image.g8_blackAndWhite()
-			//imageView.image = image.g8_blackAndWhite()
-            // 5
+            //Recognize text in the image
             tesseract.recognize()
-            // 6
+            //Print raw text
             print (tesseract.recognizedText)
-			// 7
+			//Save raw text
 			rawTextData = tesseract.recognizedText
         }
     }
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		//Set image to the imageView
 		imageView.image = capturedImageRef
     }
 
@@ -50,6 +49,7 @@ class PictureViewController: UIViewController {
     }
 	
 	@IBAction func onDigitizeClicked() {
+		//Scale image to get the best results
 		let scaledImage = imageView.image?.scaleImage(640)
 		performImageRecognition(scaledImage!)
 	}
