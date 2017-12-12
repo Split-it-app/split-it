@@ -46,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		A93F261A1FDC562C00A142ED /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		A95AAFD41FE034010078ECF7 /* Split-it_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Split-it_Logo.png"; sourceTree = "<group>"; };
 		A95BDA961FB3BA5500D1555A /* Just Split It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just Split It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95BDA991FB3BA5500D1555A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A95BDA9B1FB3BA5500D1555A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 		A95BDA981FB3BA5500D1555A /* Just Split It */ = {
 			isa = PBXGroup;
 			children = (
+				A95AAFD41FE034010078ECF7 /* Split-it_Logo.png */,
 				A95BDA9D1FB3BA5500D1555A /* Main.storyboard */,
 				A9947B071FDF04C900BA0E99 /* IndividualBillViewController.swift */,
 				A95BDA9B1FB3BA5500D1555A /* ViewController.swift */,
