@@ -77,7 +77,7 @@ class CaptureViewController: UIViewController {
         //Set photo settings
         photoSettings.isAutoStillImageStabilizationEnabled = true
         photoSettings.isHighResolutionPhotoEnabled = true
-        photoSettings.flashMode = .on
+        photoSettings.flashMode = .off
         
         //Call capturePhoto method and pass photoSettings and self which implements AVCapturePhotoCaptureDelegate
         capturePhotoOutput.capturePhoto(with: photoSettings, delegate: self)
@@ -85,12 +85,8 @@ class CaptureViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showPictureSegue" {
-        
             let destination = segue.destination as! PictureViewController
             destination.capturedImageRef = self.image!
-        
-        // returns nil propertyfrom here
-        //destination.navigationController!.setNavigationBarHidden(true, animated: false)
         }
     }
 

@@ -148,6 +148,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YR8-oJ-G5N">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="a7B-xR-7PM">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -174,11 +178,59 @@
                     <connections>
                         <outlet property="digitizeButton" destination="hrM-bV-DX3" id="qIb-gF-EPL"/>
                         <outlet property="imageView" destination="YR8-oJ-G5N" id="79S-aR-rWp"/>
+                        <outlet property="loading" destination="a7B-xR-7PM" id="uK3-EB-vIM"/>
+                        <segue destination="0lb-D8-CW4" kind="show" identifier="showRawDataSegue" id="5sG-Ft-KQ8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SCV-6a-Wfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1768.8" y="-839.73013493253382"/>
+            <point key="canvasLocation" x="1745" y="-841"/>
+        </scene>
+        <!--Raw Data View Controller-->
+        <scene sceneID="KWM-zf-lF1">
+            <objects>
+                <viewController id="0lb-D8-CW4" customClass="RawDataViewController" customModule="Just_Split_It" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dVn-kD-59u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-q7-jrP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eNQ-vP-16t">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eNQ-vP-16t" secondAttribute="trailing" id="HnO-1f-sDc"/>
+                                    <constraint firstItem="eNQ-vP-16t" firstAttribute="centerX" secondItem="d1e-q7-jrP" secondAttribute="centerX" id="QsD-Bs-MuK"/>
+                                    <constraint firstItem="eNQ-vP-16t" firstAttribute="leading" secondItem="d1e-q7-jrP" secondAttribute="leading" id="dsr-hC-NIG"/>
+                                    <constraint firstItem="eNQ-vP-16t" firstAttribute="centerY" secondItem="d1e-q7-jrP" secondAttribute="centerY" id="jEU-bz-p5d"/>
+                                    <constraint firstItem="eNQ-vP-16t" firstAttribute="top" secondItem="d1e-q7-jrP" secondAttribute="top" id="qSg-TE-pqr"/>
+                                    <constraint firstAttribute="bottom" secondItem="eNQ-vP-16t" secondAttribute="bottom" id="rAR-o9-Tsh"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d1e-q7-jrP" firstAttribute="top" secondItem="anp-IA-QoO" secondAttribute="top" id="AZV-HT-kHq"/>
+                            <constraint firstItem="d1e-q7-jrP" firstAttribute="bottom" secondItem="anp-IA-QoO" secondAttribute="bottom" id="I76-BR-bPn"/>
+                            <constraint firstItem="d1e-q7-jrP" firstAttribute="leading" secondItem="dVn-kD-59u" secondAttribute="leading" id="XUT-5F-kPq"/>
+                            <constraint firstAttribute="trailing" secondItem="d1e-q7-jrP" secondAttribute="trailing" id="kec-g4-B4K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="anp-IA-QoO"/>
+                    </view>
+                    <connections>
+                        <outlet property="rawDataTextView" destination="eNQ-vP-16t" id="drb-cF-A8r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XWk-eN-IRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2560.8000000000002" y="-842.42878560719646"/>
         </scene>
         <!--Group Bill View Controller-->
         <scene sceneID="wKj-vN-Mwf">
