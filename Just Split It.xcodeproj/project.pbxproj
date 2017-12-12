@@ -20,8 +20,14 @@
 		A993CA761FC37D2C009E3E2F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A993CA751FC37D2C009E3E2F /* Item.swift */; };
 		A993CA7A1FC38AAF009E3E2F /* GroupBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A993CA791FC38AAF009E3E2F /* GroupBillViewController.swift */; };
 		A9947B081FDF04C900BA0E99 /* IndividualBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9947B071FDF04C900BA0E99 /* IndividualBillViewController.swift */; };
+		D834A51C3EBB84A2EE40CC5A /* Pods_Just_Split_It.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B175A04BB0418C1DAFF0D8 /* Pods_Just_Split_It.framework */; };
 		E51CE3871FDB2A01003DE21A /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51CE3861FDB2A01003DE21A /* CategoryRow.swift */; };
 		E51CE3891FDB35C3003DE21A /* ModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51CE3881FDB35C3003DE21A /* ModelClass.swift */; };
+		E54773061FDF16EF00841CFD /* TesseractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54773051FDF16EF00841CFD /* TesseractViewController.swift */; };
+		E54773091FDF1A3A00841CFD /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = E54773081FDF1A3A00841CFD /* tessdata */; };
+		E547730B1FDF1A9A00841CFD /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E547730A1FDF1A9A00841CFD /* libstdc++.tbd */; };
+		E547730C1FDF1A9F00841CFD /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E547730D1FDF1A9F00841CFD /* TesseractOCR.framework */; };
+		E547730F1FDF1AAC00841CFD /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E547730E1FDF1AAC00841CFD /* CoreImage.framework */; };
 		E57FE13F1FDEE1460015F391 /* itemListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FE13E1FDEE1460015F391 /* itemListTableViewCell.swift */; };
 		FD2837B51FDD0F7E00DD1F83 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */; };
 		FD2837B81FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */; };
@@ -45,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0ECA137AFC0BC366925095C3 /* Pods-Just Split It.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Just Split It.release.xcconfig"; path = "Pods/Target Support Files/Pods-Just Split It/Pods-Just Split It.release.xcconfig"; sourceTree = "<group>"; };
+		63F7E725499650174E930C74 /* Pods-Just Split It.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Just Split It.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Just Split It/Pods-Just Split It.debug.xcconfig"; sourceTree = "<group>"; };
 		A93F261A1FDC562C00A142ED /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		A95BDA961FB3BA5500D1555A /* Just Split It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just Split It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95BDA991FB3BA5500D1555A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,8 +72,14 @@
 		A993CA751FC37D2C009E3E2F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A993CA791FC38AAF009E3E2F /* GroupBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBillViewController.swift; sourceTree = "<group>"; };
 		A9947B071FDF04C900BA0E99 /* IndividualBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualBillViewController.swift; sourceTree = "<group>"; };
+		E4B175A04BB0418C1DAFF0D8 /* Pods_Just_Split_It.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Just_Split_It.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51CE3861FDB2A01003DE21A /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		E51CE3881FDB35C3003DE21A /* ModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelClass.swift; sourceTree = "<group>"; };
+		E54773051FDF16EF00841CFD /* TesseractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesseractViewController.swift; sourceTree = "<group>"; };
+		E54773081FDF1A3A00841CFD /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		E547730A1FDF1A9A00841CFD /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		E547730D1FDF1A9F00841CFD /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E547730E1FDF1AAC00841CFD /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		E57FE13E1FDEE1460015F391 /* itemListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemListTableViewCell.swift; sourceTree = "<group>"; };
 		FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupBillsTableViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +90,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E547730F1FDF1AAC00841CFD /* CoreImage.framework in Frameworks */,
+				E547730C1FDF1A9F00841CFD /* TesseractOCR.framework in Frameworks */,
+				E547730B1FDF1A9A00841CFD /* libstdc++.tbd in Frameworks */,
+				D834A51C3EBB84A2EE40CC5A /* Pods_Just_Split_It.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D7602E34C0FB24A23A6BC84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63F7E725499650174E930C74 /* Pods-Just Split It.debug.xcconfig */,
+				0ECA137AFC0BC366925095C3 /* Pods-Just Split It.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A95BDA8D1FB3BA5500D1555A = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +130,8 @@
 				A95BDAAD1FB3BA5500D1555A /* Just Split ItTests */,
 				A95BDAB81FB3BA5600D1555A /* Just Split ItUITests */,
 				A95BDA971FB3BA5500D1555A /* Products */,
+				9D7602E34C0FB24A23A6BC84 /* Pods */,
+				E1E6DE2621D9F67FC670D1F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				A95BDA9D1FB3BA5500D1555A /* Main.storyboard */,
+				E54773051FDF16EF00841CFD /* TesseractViewController.swift */,
 				A9947B071FDF04C900BA0E99 /* IndividualBillViewController.swift */,
 				A95BDA9B1FB3BA5500D1555A /* ViewController.swift */,
 				FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */,
@@ -132,10 +162,7 @@
 				A993CA751FC37D2C009E3E2F /* Item.swift */,
 				A93F261A1FDC562C00A142ED /* Friend.swift */,
 				FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */,
-				A95BDAA01FB3BA5500D1555A /* Assets.xcassets */,
-				A95BDA991FB3BA5500D1555A /* AppDelegate.swift */,
-				A95BDAA21FB3BA5500D1555A /* LaunchScreen.storyboard */,
-				A95BDAA51FB3BA5500D1555A /* Info.plist */,
+				E54773071FDF19F800841CFD /* Supporting Files */,
 			);
 			path = "Just Split It";
 			sourceTree = "<group>";
@@ -158,6 +185,29 @@
 			path = "Just Split ItUITests";
 			sourceTree = "<group>";
 		};
+		E1E6DE2621D9F67FC670D1F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E547730E1FDF1AAC00841CFD /* CoreImage.framework */,
+				E547730D1FDF1A9F00841CFD /* TesseractOCR.framework */,
+				E547730A1FDF1A9A00841CFD /* libstdc++.tbd */,
+				E4B175A04BB0418C1DAFF0D8 /* Pods_Just_Split_It.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E54773071FDF19F800841CFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E54773081FDF1A3A00841CFD /* tessdata */,
+				A95BDAA01FB3BA5500D1555A /* Assets.xcassets */,
+				A95BDA991FB3BA5500D1555A /* AppDelegate.swift */,
+				A95BDAA21FB3BA5500D1555A /* LaunchScreen.storyboard */,
+				A95BDAA51FB3BA5500D1555A /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A95BDABE1FB3BA5600D1555A /* Build configuration list for PBXNativeTarget "Just Split It" */;
 			buildPhases = (
+				089B8C054CCE5A8E7A960709 /* [CP] Check Pods Manifest.lock */,
 				A95BDA921FB3BA5500D1555A /* Sources */,
 				A95BDA931FB3BA5500D1555A /* Frameworks */,
 				A95BDA941FB3BA5500D1555A /* Resources */,
+				7DE41C375B2FE2AE17878C4F /* [CP] Embed Pods Frameworks */,
+				9CB7D249E1B2D00E3C408989 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A95BDAA41FB3BA5500D1555A /* LaunchScreen.storyboard in Resources */,
+				E54773091FDF1A3A00841CFD /* tessdata in Resources */,
 				A95BDAA11FB3BA5500D1555A /* Assets.xcassets in Resources */,
 				A95BDA9F1FB3BA5500D1555A /* Main.storyboard in Resources */,
 			);
@@ -286,6 +340,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		089B8C054CCE5A8E7A960709 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Just Split It-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DE41C375B2FE2AE17878C4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Just Split It/Pods-Just Split It-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Just Split It/Pods-Just Split It-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CB7D249E1B2D00E3C408989 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Just Split It/Pods-Just Split It-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A95BDA921FB3BA5500D1555A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -302,6 +410,7 @@
 				A9607B991FDE047800ABDBEC /* friendCollectionViewCell.swift in Sources */,
 				E57FE13F1FDEE1460015F391 /* itemListTableViewCell.swift in Sources */,
 				E51CE3871FDB2A01003DE21A /* CategoryRow.swift in Sources */,
+				E54773061FDF16EF00841CFD /* TesseractViewController.swift in Sources */,
 				A93F261B1FDC562C00A142ED /* Friend.swift in Sources */,
 				A993CA7A1FC38AAF009E3E2F /* GroupBillViewController.swift in Sources */,
 			);
@@ -467,11 +576,13 @@
 		};
 		A95BDABF1FB3BA5600D1555A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63F7E725499650174E930C74 /* Pods-Just Split It.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 76HA5S3YN4;
-				INFOPLIST_FILE = "Just Split It/Info.plist";
+				DEVELOPMENT_TEAM = VW8MPW778K;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Just Split It/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.split-it.nyu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,11 +593,13 @@
 		};
 		A95BDAC01FB3BA5600D1555A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ECA137AFC0BC366925095C3 /* Pods-Just Split It.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 76HA5S3YN4;
-				INFOPLIST_FILE = "Just Split It/Info.plist";
+				DEVELOPMENT_TEAM = VW8MPW778K;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Just Split It/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.split-it.nyu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
