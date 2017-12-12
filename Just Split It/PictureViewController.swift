@@ -42,7 +42,6 @@ class PictureViewController: UIViewController {
         super.viewDidLoad()
 		//Set image to the imageView
 		imageView.image = capturedImageRef
-		view.addSubview(loading)
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,14 +51,15 @@ class PictureViewController: UIViewController {
 	
 	@IBAction func onDigitizeClicked() {
 		
+		self.showActivityIndicatory(uiView: imageView)
 		
-		loading.startAnimating()
+		//self.loading.startAnimating()
 		
 		//Scale image to get the best results
 		let scaledImage = imageView.image?.scaleImage(640)
 		performImageRecognition(scaledImage!)
 		
-		loading.stopAnimating()
+		//self.loading.stopAnimating()
 		
 		//Segue to next view
 		self.performSegue(withIdentifier: "showRawDataSegue", sender: self)
@@ -71,6 +71,17 @@ class PictureViewController: UIViewController {
 			let destination = segue.destination as! RawDataViewController
 			destination.rawData = self.rawTextData!
 		}
+	}
+	
+	func showActivityIndicatory(uiView: UIView) {
+		var actInd: UIActivityIndicatorView = UIActivityIndicatorView()
+		actInd.frame = CGRect(x:0.0,y:0.0,width:40.0,height: 40.0);
+		actInd.center = uiView.center
+		actInd.hidesWhenStopped = true
+		actInd.activityIndicatorViewStyle =
+			UIActivityIndicatorViewStyle.whiteLarge
+		uiView.addSubview(actInd)
+		actInd.startAnimating()
 	}
 
 }
