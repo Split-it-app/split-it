@@ -141,27 +141,10 @@
         <scene sceneID="o8E-Lq-alg">
             <objects>
                 <viewController id="CBH-O1-37N" customClass="PictureViewController" customModule="Just_Split_It" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BgR-Br-uSM">
+                    <activityIndicatorView key="view" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="i4F-oM-h08">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YR8-oJ-G5N">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                            </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="a7B-xR-7PM">
-                                <rect key="frame" x="177" y="323" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="hfr-PM-oBF" firstAttribute="bottom" secondItem="YR8-oJ-G5N" secondAttribute="bottom" id="3Oy-Qo-Tic"/>
-                            <constraint firstItem="hfr-PM-oBF" firstAttribute="trailing" secondItem="YR8-oJ-G5N" secondAttribute="trailing" id="JQV-5y-Kax"/>
-                            <constraint firstItem="YR8-oJ-G5N" firstAttribute="top" secondItem="hfr-PM-oBF" secondAttribute="top" id="mCm-tY-O60"/>
-                            <constraint firstItem="YR8-oJ-G5N" firstAttribute="leading" secondItem="hfr-PM-oBF" secondAttribute="leading" id="nD9-0e-IdI"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="hfr-PM-oBF"/>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </activityIndicatorView>
                     <navigationItem key="navigationItem" id="jzc-03-qg4">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="0Sp-29-k7W">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hrM-bV-DX3">
@@ -177,8 +160,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="digitizeButton" destination="hrM-bV-DX3" id="qIb-gF-EPL"/>
-                        <outlet property="imageView" destination="YR8-oJ-G5N" id="79S-aR-rWp"/>
-                        <outlet property="loading" destination="a7B-xR-7PM" id="uK3-EB-vIM"/>
                         <segue destination="0lb-D8-CW4" kind="show" identifier="showRawDataSegue" id="5sG-Ft-KQ8"/>
                     </connections>
                 </viewController>

@@ -77,7 +77,7 @@ class CaptureViewController: UIViewController {
         //Set photo settings
         photoSettings.isAutoStillImageStabilizationEnabled = true
         photoSettings.isHighResolutionPhotoEnabled = true
-        photoSettings.flashMode = .off
+        photoSettings.flashMode = .on
         
         //Call capturePhoto method and pass photoSettings and self which implements AVCapturePhotoCaptureDelegate
         capturePhotoOutput.capturePhoto(with: photoSettings, delegate: self)
