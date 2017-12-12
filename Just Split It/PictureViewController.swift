@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Foundation
+import TesseractOCR
 
 class PictureViewController: UIViewController {
 	
@@ -13,18 +15,64 @@ class PictureViewController: UIViewController {
 	
 	//Variable that's going to receive the UIImage
 	var capturedImageRef = UIImage()
+    
+    
+    // Tesseract Image Recognition
+    func performImageRecognition(_ image: UIImage) {
+        if let tesseract = G8Tesseract(language: "eng+fra") {
+            // 2
+            tesseract.engineMode = .tesseractCubeCombined
+            // 3
+            tesseract.pageSegmentationMode = .auto
+            // 4
+            tesseract.image = image.g8_blackAndWhite()
+            // 5
+            tesseract.recognize()
+            // 6
+            print (tesseract.recognizedText)
+        }
+    }
+    
+    
+    
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 
 		imageView.image = capturedImageRef
+        
+        let scaledImage = imageView.image?.scaleImage(640)
+        
+        performImageRecognition(scaledImage!)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-	
-	
+    
 
+}
+
+// MARK: - UIImage extension
+extension UIImage {
+    func scaleImage(_ maxDimension: CGFloat) -> UIImage? {
+        
+        var scaledSize = CGSize(width: maxDimension, height: maxDimension)
+        
+        if size.width > size.height {
+            let scaleFactor = size.height / size.width
+            scaledSize.height = scaledSize.width * scaleFactor
+        } else {
+            let scaleFactor = size.width / size.height
+            scaledSize.width = scaledSize.height * scaleFactor
+        }
+        
+        UIGraphicsBeginImageContext(scaledSize)
+        draw(in: CGRect(origin: .zero, size: scaledSize))
+        let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return scaledImage
+    }
 }

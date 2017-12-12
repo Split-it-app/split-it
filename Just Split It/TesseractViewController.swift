@@ -13,12 +13,15 @@ class TesseractViewController: UIViewController {
 
     @IBOutlet weak var textView: UITextView!
     
+
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     @IBAction func takePhoto(_ sender: Any) {
         view.endEditing(true)
         presentImagePicker()
     }
+    
+    
     
     // Tesseract Image Recognition
     func performImageRecognition(_ image: UIImage) {
@@ -122,7 +125,7 @@ extension TesseractViewController: UIImagePickerControllerDelegate {
     }
     
 }
-
+/*
 // MARK: - UIImage extension
 extension UIImage {
     func scaleImage(_ maxDimension: CGFloat) -> UIImage? {
@@ -145,4 +148,4 @@ extension UIImage {
         return scaledImage
     }
 }
-
+*/
