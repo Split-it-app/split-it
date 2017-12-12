@@ -2,18 +2,39 @@
 //  IndividualBillViewController.swift
 //  Just Split It
 //
-//  Created by William on 12/10/17.
+//  Created by Maria-Belem on 12/11/17.
 //
 
 import UIKit
 
-class IndividualBillViewController: UIViewController {
+class IndividualBillViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
+    @IBOutlet weak var IndividItemTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let itemCell = tableView.dequeueReusableCell(withIdentifier: "individItemCell", for: indexPath) as! itemListTableViewCell
+        
+        
+        //itemCell.Title.text = itemsArray[indexPath.row].name
+        itemCell.Title.text = "Item Name"
+        // itemCell.Detail.text = "$" + itemsArray[indexPath.row].price.description
+        itemCell.Detail.text = "$5"
+        
+        //itemCell.textLabel?.text = itemsArray[indexPath.row].name
+        //itemCell.detailTextLabel?.text = "$" + itemsArray[indexPath.row].price.description
+        return itemCell
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

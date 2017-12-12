@@ -295,6 +295,7 @@
                                                             <color key="backgroundColor" red="0.69982367316717609" green="1" blue="0.74289240632187348" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <connections>
                                                                 <outlet property="friendNameLabel" destination="TP9-gt-Tld" id="JZk-FF-2cc"/>
+                                                                <segue destination="lf7-sh-6eb" kind="show" id="xIl-IJ-bwW"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -332,19 +333,44 @@
             <point key="canvasLocation" x="936.79999999999995" y="-158.77061469265368"/>
         </scene>
         <!--Individual Bill View Controller-->
-        <scene sceneID="dKB-Pe-1dv">
+        <scene sceneID="2Js-i4-20n">
             <objects>
-                <viewController id="pU3-7c-1QY" customClass="IndividualBillViewController" customModule="Just_Split_It" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Aix-b7-8xT">
+                <viewController id="lf7-sh-6eb" customClass="IndividualBillViewController" customModule="Just_Split_It" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hBM-fK-3UM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="IndividItemTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xqT-MN-4ou">
+                                <rect key="frame" x="0.0" y="290" width="375" height="377"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="individItemCell" id="yJf-6u-ENo">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yJf-6u-ENo" id="9zl-Vn-8I1" customClass="itemListTableViewCell" customModule="Just_Split_It" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="lf7-sh-6eb" id="Hbk-LY-yh8"/>
+                                    <outlet property="delegate" destination="lf7-sh-6eb" id="VXh-na-Axg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="SU0-MR-sh3"/>
+                        <viewLayoutGuide key="safeArea" id="bCe-ch-hLt"/>
                     </view>
+                    <connections>
+                        <outlet property="IndividItemTableView" destination="xqT-MN-4ou" id="atn-cY-6hN"/>
+                        <outlet property="ItemTableView" destination="xqT-MN-4ou" id="idw-jA-IsL"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="svt-eF-ro5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AC3-Ij-wtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1770" y="-160"/>
+            <point key="canvasLocation" x="1744.8" y="-158.77061469265368"/>
         </scene>
         <!--NavigationController-->
         <scene sceneID="aDJ-eg-ngC">
