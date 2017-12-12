@@ -11,10 +11,12 @@ import TesseractOCR
 
 class PictureViewController: UIViewController {
 	
+	@IBOutlet weak var digitizeButton: UIButton!
 	@IBOutlet weak var imageView: UIImageView!
 	
 	//Variable that's going to receive the UIImage
-	var capturedImageRef = UIImage()
+	var capturedImageRef: UIImage!
+	var rawTextData: String!
     
     
     // Tesseract Image Recognition
@@ -26,31 +28,31 @@ class PictureViewController: UIViewController {
             tesseract.pageSegmentationMode = .auto
             // 4
             tesseract.image = image.g8_blackAndWhite()
+			//imageView.image = image.g8_blackAndWhite()
             // 5
             tesseract.recognize()
             // 6
             print (tesseract.recognizedText)
+			// 7
+			rawTextData = tesseract.recognizedText
         }
     }
-    
-    
-    
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 
 		imageView.image = capturedImageRef
-        
-        let scaledImage = imageView.image?.scaleImage(640)
-        
-        performImageRecognition(scaledImage!)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+	
+	@IBAction func onDigitizeClicked() {
+		let scaledImage = imageView.image?.scaleImage(640)
+		performImageRecognition(scaledImage!)
+	}
 
 }
 
