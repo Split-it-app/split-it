@@ -36,6 +36,7 @@ class PictureViewController: UIViewController {
 			//Save raw text
 			rawTextData = tesseract.recognizedText
         }
+		self.loading.stopAnimating()
     }
 	
     override func viewDidLoad() {
@@ -51,15 +52,11 @@ class PictureViewController: UIViewController {
 	
 	@IBAction func onDigitizeClicked() {
 		
-		self.showActivityIndicatory(uiView: imageView)
-		
 		//self.loading.startAnimating()
 		
 		//Scale image to get the best results
-		let scaledImage = imageView.image?.scaleImage(640)
+		let scaledImage = imageView.image?.scaleImage(1000)
 		performImageRecognition(scaledImage!)
-		
-		//self.loading.stopAnimating()
 		
 		//Segue to next view
 		self.performSegue(withIdentifier: "showRawDataSegue", sender: self)
@@ -71,17 +68,6 @@ class PictureViewController: UIViewController {
 			let destination = segue.destination as! RawDataViewController
 			destination.rawData = self.rawTextData!
 		}
-	}
-	
-	func showActivityIndicatory(uiView: UIView) {
-		var actInd: UIActivityIndicatorView = UIActivityIndicatorView()
-		actInd.frame = CGRect(x:0.0,y:0.0,width:40.0,height: 40.0);
-		actInd.center = uiView.center
-		actInd.hidesWhenStopped = true
-		actInd.activityIndicatorViewStyle =
-			UIActivityIndicatorViewStyle.whiteLarge
-		uiView.addSubview(actInd)
-		actInd.startAnimating()
 	}
 
 }
