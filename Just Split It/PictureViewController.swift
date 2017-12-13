@@ -35,6 +35,7 @@ class PictureViewController: UIViewController {
 			//Save raw text
 			rawTextData = tesseract.recognizedText
         }
+		self.loading.stopAnimating()
     }
 	
     override func viewDidLoad() {
@@ -50,7 +51,7 @@ class PictureViewController: UIViewController {
 	
 	@IBAction func onDigitizeClicked() {
 		//Scale image to get the best results
-		let scaledImage = imageView.image?.scaleImage(640)
+		let scaledImage = imageView.image//?.scaleImage(640)
 		performImageRecognition(scaledImage!)
 		
 		//Segue to next view

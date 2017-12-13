@@ -66,13 +66,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ifx-nV-Suu">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="ZbL-tV-VA7">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EPT-br-mMH">
-                                <rect key="frame" x="16" y="7" width="67" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Tesseract"/>
-                            </button>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Ema-9i-bY3">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nkt-n1-k08">
                                 <rect key="frame" x="304" y="7" width="55" height="30"/>
