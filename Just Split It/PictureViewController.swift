@@ -55,7 +55,7 @@ class PictureViewController: UIViewController {
 		//self.loading.startAnimating()
 		
 		//Scale image to get the best results
-		let scaledImage = imageView.image?.scaleImage(1000)
+		let scaledImage = imageView.image//?.scaleImage(640)
 		performImageRecognition(scaledImage!)
 		
 		//Segue to next view
