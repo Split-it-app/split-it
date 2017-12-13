@@ -27,7 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let item2 = Item(name: "coca cola", price: 3)
         let item3 = Item(name: "sprite", price: 4)
         let item4 = Item(name: "hard drugs", price: 5)
-        let tax = Item(name: "tax", price: 2)
+        let tax = Item(name: "Tax", price: 2)
         let friend1 = Friend()
         friend1.name = "MB"
         let friend2 = Friend()
@@ -43,6 +43,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         groupBill1.addItem(item: item3)
         groupBill1.addItem(item: item4)
         groupBill1.addItem(item: tax)
+        let itema = Item(name: "Coffee", price: 4)
+        let itemb = Item(name: "Biscuit", price: 4)
+        let itemc = Item(name: "Smoothie", price: 3)
+        let itemd = Item(name: "Oatmeal", price: 3)
+        let tax2 = Item(name: "Tax", price: 2)
+        groupBill2.addItem(item: itema)
+        groupBill2.addItem(item: itemb)
+        groupBill2.addItem(item: itemc)
+        groupBill2.addItem(item: itemd)
+        groupBill2.addItem(item: tax2)
+        
+        let ramen1 = Item(name: "Veggie Ramen", price: 12)
+        let ramen2 = Item(name: "Drink", price: 2)
+        let tax3 = Item(name:"Tax", price: 2)
+        groupBill3.addItem(item: ramen1)
+        groupBill3.addItem(item: ramen2)
+        groupBill3.addItem(item: tax3)
+        
         groupBill1.addFriend(friend: friend1)
         groupBill1.addFriend(friend: friend2)
         groupBill1.addFriend(friend: friend3)
@@ -73,8 +91,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
         let mintColor2 = UIColor(red: 219/255.0, green: 233/255.0, blue: 216/255.0, alpha: 1.0)
-        self.view.backgroundColor = mintColor
-        self.groupBillsTableView.backgroundColor = mintColor
+        let JSIColor = UIColor(red: 64/255.0, green: 173/255.0, blue: 98/255.0, alpha: 1.0)
+        
+        self.view.backgroundColor = JSIColor
+        self.groupBillsTableView.backgroundColor = JSIColor
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -98,16 +118,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
       
         let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
         //let mintColor2 = UIColor(red: 219/255.0, green: 233/255.0, blue: 216/255.0, alpha: 1.0)
-        // let frostColor = UIColor(red: 233/255.0, green: 236/255.0, blue: 229/255.0, alpha: 1.0)
+        let frostColor = UIColor(red: 233/255.0, green: 236/255.0, blue: 229/255.0, alpha: 1.0)
         let darkColor = UIColor(red: 59/255.0, green: 58/255.0, blue: 54/255.0, alpha: 1.0)
+        let JSIColor = UIColor(red: 64/255.0, green: 173/255.0, blue: 98/255.0, alpha: 1.0)
         
         billCell.textLabel?.text = model.groupBillArray[indexPath.row].getBillName()
-        billCell.textLabel?.textColor = darkColor
+        billCell.textLabel?.textColor = frostColor
         billCell.textLabel?.font = UIFont (name: "PingFangHK-Regular", size: 20)
         billCell.detailTextLabel?.text = model.groupBillArray[indexPath.row].date
         billCell.detailTextLabel?.font = UIFont (name: "PingFangHK-Regular", size: 14)
-        billCell.detailTextLabel?.textColor = darkColor
-        billCell.backgroundColor = mintColor
+        billCell.detailTextLabel?.textColor = frostColor
+        billCell.backgroundColor = JSIColor
         return billCell
     }
     

@@ -15,6 +15,9 @@ class CategoryRow: UITableViewCell, UICollectionViewDataSource, UICollectionView
     
     var friendArray = [Friend]()
     
+    let frostColor = UIColor(red: 223/255.0, green: 236/255.0, blue: 229/255.0, alpha: 1.0)
+    let JSIColor = UIColor(red: 64/255.0, green: 173/255.0, blue: 98/255.0, alpha: 1.0)
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // test
         print ("category friend count: " + friendArray.count.description)
@@ -39,7 +42,7 @@ class CategoryRow: UITableViewCell, UICollectionViewDataSource, UICollectionView
         let leafColor = UIColor(red: 102/255.0, green: 171/255.0, blue: 140/255.0, alpha: 1.0)
         
    
-        friendCellCollection.backgroundColor = salmonColor
+        friendCellCollection.backgroundColor = rainColor
         friendCellCollection.friendNameFont = UIFont (name: "PingFangHK-Regular", size: 20)!
         
         return friendCellCollection
@@ -55,7 +58,7 @@ class CategoryRow: UITableViewCell, UICollectionViewDataSource, UICollectionView
         let hardCodedPadding: CGFloat = 5
         let itemWidth = (collectionView.bounds.width/itemsPerRow) - hardCodedPadding
         let itemHeight = collectionView.bounds.height - (2*hardCodedPadding)
-        collectionView.backgroundColor = mintColor
+        collectionView.backgroundColor = JSIColor
         return CGSize(width: itemWidth, height: itemHeight)
     }
     

@@ -16,6 +16,8 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var ItemTableView: UITableView!
     //@IBOutlet weak var priceTableView: UITableView!
     
+    let frostColor = UIColor(red: 223/255.0, green: 236/255.0, blue: 229/255.0, alpha: 1.0)
+    let JSIColor = UIColor(red: 64/255.0, green: 173/255.0, blue: 98/255.0, alpha: 1.0)
     
     var model:ModelClass = ModelClass()
     
@@ -38,10 +40,12 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
         print("friend count: " + friendsArray.count.description)
         
         //let mintColor2 = UIColor(red: 219/255.0, green: 233/255.0, blue: 216/255.0, alpha: 1.0)
-        let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
-        self.view.backgroundColor = mintColor
-        self.FriendTableView.backgroundColor = mintColor
-        self.ItemTableView.backgroundColor = mintColor
+       // let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
+        self.view.backgroundColor = JSIColor
+        self.FriendTableView.backgroundColor = JSIColor
+        self.ItemTableView.backgroundColor = JSIColor
+        
+        navigationController?.navigationBar.barTintColor = JSIColor
     
     }
 
@@ -58,13 +62,12 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view:UIView, forSection: Int) {
         let darkColor = UIColor(red: 59/255.0, green: 58/255.0, blue: 54/255.0, alpha: 1.0)
-        let frostColor = UIColor(red: 223/255.0, green: 236/255.0, blue: 229/255.0, alpha: 1.0)
        // let blueColor = UIColor(red: 194/255.0, green: 212/255.0, blue: 216/255.0, alpha: 1.0)
         
         if let headerTitle = view as? UITableViewHeaderFooterView {
             headerTitle.textLabel?.textColor = darkColor
             headerTitle.textLabel?.font = UIFont(name: "PingFangHK-Medium", size: 20)
-            headerTitle.backgroundView?.backgroundColor = frostColor
+           // headerTitle.backgroundView?.backgroundColor = frostColor
         }
     }
     
@@ -76,20 +79,20 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
                 totalPrice += itemsArray[i].price
             }
         */
-            showPrice = "Total $ \(totalPrice)"
+            totalPrice = 16
+            showPrice = "Total $ \(totalPrice)0"
         }
         return showPrice
     }
     
     func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
         let darkColor = UIColor(red: 59/255.0, green: 58/255.0, blue: 54/255.0, alpha: 1.0)
-        let frostColor = UIColor(red: 223/255.0, green: 236/255.0, blue: 229/255.0, alpha: 1.0)
         //let blueColor = UIColor(red: 194/255.0, green: 212/255.0, blue: 216/255.0, alpha: 1.0)
         
         if let footerTitle = view as? UITableViewHeaderFooterView {
             footerTitle.textLabel?.textColor = darkColor
             footerTitle.textLabel?.font = UIFont(name: "PingFangHK-Medium", size: 20)
-            footerTitle.backgroundView?.backgroundColor = frostColor
+           // footerTitle.backgroundView?.backgroundColor = frostColor
         }
     }
     
@@ -131,24 +134,25 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         if(tableView == self.ItemTableView) {
             //let itemCell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "itemCell")
-            
             let itemCell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! itemListTableViewCell
             
            // let mintColor2 = UIColor(red: 219/255.0, green: 233/255.0, blue: 216/255.0, alpha: 1.0)
             let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
+            
             let darkColor = UIColor(red: 59/255.0, green: 58/255.0, blue: 54/255.0, alpha: 1.0)
             
             itemCell.Title.text = itemsArray[indexPath.row].name
             itemCell.Title.font = UIFont (name: "PingFangHK-Regular", size: 20)
-            itemCell.Title.textColor = darkColor
+            itemCell.Title.textColor = frostColor
             
-            itemCell.Detail.text = "$" + itemsArray[indexPath.row].price.description
+            itemCell.Detail.text = "$" + itemsArray[indexPath.row].price.description + "0"
             itemCell.Detail.font = UIFont (name: "PingFangHK-Regular", size: 20)
-            itemCell.Detail.textColor = darkColor
+            itemCell.Detail.textColor = frostColor
             
-            itemCell.backgroundColor = mintColor
+            itemCell.backgroundColor = JSIColor
             
             //itemCell.textLabel?.text = itemsArray[indexPath.row].name
             //itemCell.detailTextLabel?.text = "$" + itemsArray[indexPath.row].price.description
@@ -163,7 +167,7 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
            // let mintColor2 = UIColor(red: 219/255.0, green: 233/255.0, blue: 216/255.0, alpha: 1.0)
             let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
             
-            friendListCell.backgroundColor = mintColor
+            friendListCell.backgroundColor = JSIColor
             
             return friendListCell
         }
