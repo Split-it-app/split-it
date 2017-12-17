@@ -28,7 +28,8 @@
 		E57FE13F1FDEE1460015F391 /* itemListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FE13E1FDEE1460015F391 /* itemListTableViewCell.swift */; };
 		FD2837B51FDD0F7E00DD1F83 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */; };
 		FD2837B81FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */; };
-		FDBC31321FE07F3E00BFC8A7 /* Split-it_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBC31311FE07F3E00BFC8A7 /* Split-it_Logo.png */; };
+		FD996F9B1FE60EBD003DFAFF /* Split-it_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FD996F9A1FE60EBC003DFAFF /* Split-it_Logo.png */; };
+		FDBC31321FE07F3E00BFC8A7 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		FDCF103B1FE041F100606150 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDCF10371FE041F000606150 /* Info.plist */; };
 		FDCF103C1FE041F100606150 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FDCF10381FE041F000606150 /* Base.lproj */; };
 		FDCF103D1FE041F100606150 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF10391FE041F000606150 /* AppDelegate.swift */; };
@@ -85,6 +86,7 @@
 		E57FE13E1FDEE1460015F391 /* itemListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemListTableViewCell.swift; sourceTree = "<group>"; };
 		FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupBillsTableViewController.swift; sourceTree = "<group>"; };
+		FD996F9A1FE60EBC003DFAFF /* Split-it_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Split-it_Logo.png"; path = "Assets.xcassets/Split-it_Logo.png"; sourceTree = "<group>"; };
 		FDCF10371FE041F000606150 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDCF10381FE041F000606150 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = "Supporting Files/Base.lproj"; sourceTree = "<group>"; };
 		FDCF10391FE041F000606150 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Supporting Files/AppDelegate.swift"; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 			children = (
 				FDCF10371FE041F000606150 /* Info.plist */,
 				FDCF103A1FE041F100606150 /* Assets.xcassets */,
+				FD996F9A1FE60EBC003DFAFF /* Split-it_Logo.png */,
 				E54773081FDF1A3A00841CFD /* tessdata */,
 			);
 			path = "Supporting Files";
@@ -340,7 +343,8 @@
 			files = (
 				E54773091FDF1A3A00841CFD /* tessdata in Resources */,
 				FDCF103B1FE041F100606150 /* Info.plist in Resources */,
-				FDBC31321FE07F3E00BFC8A7 /* Split-it_Logo.png in Resources */,
+				FD996F9B1FE60EBD003DFAFF /* Split-it_Logo.png in Resources */,
+				FDBC31321FE07F3E00BFC8A7 /* (null) in Resources */,
 				FDCF103E1FE041F100606150 /* Assets.xcassets in Resources */,
 				FDCF10421FE0437F00606150 /* LaunchScreen.storyboard in Resources */,
 				FDCF103C1FE041F100606150 /* Base.lproj in Resources */,
