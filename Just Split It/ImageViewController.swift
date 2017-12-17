@@ -21,7 +21,7 @@ class ImageViewController: UIViewController {
 	
 	// Tesseract Image Recognition
 	func performImageRecognition(_ image: UIImage) {
-		if let tesseract = G8Tesseract(language: "eng+fra") {
+		if let tesseract = G8Tesseract(language: "eng") {
 			//Set tesseract mode to Cube combined (slowest but also the most accurate)
 			tesseract.engineMode = .tesseractCubeCombined
 			//Set mode so that it recognizes paragraph breaks
@@ -50,7 +50,7 @@ class ImageViewController: UIViewController {
 	
 	@IBAction func onDigitizeClicked() {
 		//Scale image to get the best results
-		let scaledImage = imageView.image//?.scaleImage(640)
+		let scaledImage = imageView.image?.scaleImage(1200)
 		performImageRecognition(scaledImage!)
 		
 		//Segue to next view
