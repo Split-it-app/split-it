@@ -36,7 +36,6 @@
 		FDCF103E1FE041F100606150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDCF103A1FE041F100606150 /* Assets.xcassets */; };
 		FDCF10421FE0437F00606150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDCF10401FE0437F00606150 /* LaunchScreen.storyboard */; };
 		FDCF10461FE0591300606150 /* RawDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF10451FE0591300606150 /* RawDataViewController.swift */; };
-		FDCF10531FE0750A00606150 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF10521FE0750A00606150 /* PictureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +92,6 @@
 		FDCF103A1FE041F100606150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDCF10411FE0437F00606150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDCF10451FE0591300606150 /* RawDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawDataViewController.swift; sourceTree = "<group>"; };
-		FDCF10521FE0750A00606150 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +158,6 @@
 		A95BDA981FB3BA5500D1555A /* Just Split It */ = {
 			isa = PBXGroup;
 			children = (
-				FDCF10521FE0750A00606150 /* PictureViewController.swift */,
 				A95BDA9D1FB3BA5500D1555A /* Main.storyboard */,
 				FDCF10451FE0591300606150 /* RawDataViewController.swift */,
 				E54773051FDF16EF00841CFD /* TesseractViewController.swift */,
@@ -428,7 +425,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9947B081FDF04C900BA0E99 /* IndividualBillViewController.swift in Sources */,
-				FDCF10531FE0750A00606150 /* PictureViewController.swift in Sources */,
 				A993CA761FC37D2C009E3E2F /* Item.swift in Sources */,
 				A95BDA9C1FB3BA5500D1555A /* ViewController.swift in Sources */,
 				E51CE3891FDB35C3003DE21A /* ModelClass.swift in Sources */,
