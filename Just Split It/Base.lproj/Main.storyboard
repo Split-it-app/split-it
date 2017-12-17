@@ -130,10 +130,10 @@
             </objects>
             <point key="canvasLocation" x="937" y="-840"/>
         </scene>
-        <!--Picture View Controller-->
+        <!--Image View Controller-->
         <scene sceneID="7a9-uE-CiO">
             <objects>
-                <viewController id="zik-DV-RS0" customClass="PictureViewController" customModule="Just_Split_It" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zik-DV-RS0" customClass="ImageViewController" customModule="Just_Split_It" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LXP-ZF-Tw2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,11 +153,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Digitize"/>
+                                <connections>
+                                    <action selector="onDigitizeClicked" destination="zik-DV-RS0" eventType="touchUpInside" id="KRD-In-NkM"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="imageView" destination="Urd-yl-W6o" id="Qeb-rb-JGM"/>
+                        <outlet property="digitizeButton" destination="9Ue-Be-OtH" id="nNt-u4-iSy"/>
+                        <outlet property="imageView" destination="Urd-yl-W6o" id="tCB-eV-xjZ"/>
                         <segue destination="0lb-D8-CW4" kind="show" identifier="showRawDataSegue" id="RVj-H8-d2b"/>
                     </connections>
                 </viewController>
