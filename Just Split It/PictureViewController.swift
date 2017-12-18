@@ -35,7 +35,7 @@ class PictureViewController: UIViewController {
 			//Save raw text
 			rawTextData = tesseract.recognizedText
         }
-		self.loading.stopAnimating()
+		//self.loading.stopAnimating()
     }
 	
     override func viewDidLoad() {
