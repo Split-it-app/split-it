@@ -85,7 +85,7 @@ class CaptureViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showPictureSegue" {
-            let destination = segue.destination as! PictureViewController
+            let destination = segue.destination as! ImageViewController
             destination.capturedImageRef = self.image!
         }
     }

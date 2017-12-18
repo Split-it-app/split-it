@@ -15,6 +15,18 @@ class CategoryRow: UITableViewCell, UICollectionViewDataSource, UICollectionView
     
     var friendArray = [Friend]()
     
+    var colorArray = [UIColor]()
+    var colorIndex = 0
+    
+    var fFont = UIFont (name: "PingFangHK-Regular", size: 20)
+    
+    //Want 4 different colors for the labels
+    let salmonColor = UIColor(red: 250/255.0, green: 124/255.0, blue: 146/255.0, alpha: 1.0)
+    let rainColor = UIColor(red: 110/255.0, green: 196/255.0, blue: 219/255.0, alpha: 1.0)
+    let buttermilkColor = UIColor(red: 255/255.0, green: 247/255.0, blue: 192/255.0, alpha: 1.0)
+    let lavenderColor = UIColor(red: 176/255.0, green: 170/255.0, blue: 194/255.0, alpha: 1.0)
+    let leafColor = UIColor(red: 102/255.0, green: 171/255.0, blue: 140/255.0, alpha: 1.0)
+    
     let frostColor = UIColor(red: 223/255.0, green: 236/255.0, blue: 229/255.0, alpha: 1.0)
     let JSIColor = UIColor(red: 64/255.0, green: 173/255.0, blue: 98/255.0, alpha: 1.0)
     
@@ -22,27 +34,29 @@ class CategoryRow: UITableViewCell, UICollectionViewDataSource, UICollectionView
         // test
         print ("category friend count: " + friendArray.count.description)
         //print(friendArray[0].name)
-        return friendArray.count
+        return friendArray.count+1
     }
     
     // extension: UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+       
+        
         let friendCellCollection = collectionView.dequeueReusableCell(withReuseIdentifier: "friendCellCollection", for: indexPath) as! friendCollectionViewCell
         
-         friendCellCollection.friendName = friendArray[indexPath.row].name
-        //let friend = friendArray[indexPath.row];
-       // friendCellCollection.friendName = friend.name
-    
-        //let lavenderColor = UIColor(red: 176/255.0, green: 170/255.0, blue: 194/255.0, alpha: 1.0)
+        if(indexPath.row >= friendArray.count){
+            friendCellCollection.friendName = "+" //Add a friend
+            friendCellCollection.backgroundColor = frostColor
+        } else{
+            friendCellCollection.friendName = friendArray[indexPath.row].name
+            if(friendArray[indexPath.row].color == JSIColor){
+                //randomly set color of friend if user hasn't designated a color yet
+                friendCellCollection.backgroundColor = colorArray[colorIndex]
+                colorIndex = colorIndex + 1
+            } else {
+                friendCellCollection.backgroundColor = friendArray[indexPath.row].color
+            }
+        }
         
-        //Want 4 different colors for the labels
-        let salmonColor = UIColor(red: 250/255.0, green: 124/255.0, blue: 146/255.0, alpha: 1.0)
-        let rainColor = UIColor(red: 110/255.0, green: 196/255.0, blue: 219/255.0, alpha: 1.0)
-        let buttermilkColor = UIColor(red: 255/255.0, green: 247/255.0, blue: 192/255.0, alpha: 1.0)
-        let leafColor = UIColor(red: 102/255.0, green: 171/255.0, blue: 140/255.0, alpha: 1.0)
-        
-   
-        friendCellCollection.backgroundColor = rainColor
         friendCellCollection.friendNameFont = UIFont (name: "PingFangHK-Regular", size: 20)!
         
         return friendCellCollection
@@ -51,18 +65,30 @@ class CategoryRow: UITableViewCell, UICollectionViewDataSource, UICollectionView
     // extension: UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        //let mintColor2 = UIColor(red: 219/255.0, green: 233/255.0, blue: 216/255.0, alpha: 1.0)
-        let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
+        colorArray.append(rainColor)
+        colorArray.append(salmonColor)
+        colorArray.append(buttermilkColor)
+        colorArray.append(lavenderColor)
         
-        let itemsPerRow: CGFloat = 4
-        let hardCodedPadding: CGFloat = 5
-        let itemWidth = (collectionView.bounds.width/itemsPerRow) - hardCodedPadding
-        let itemHeight = collectionView.bounds.height - (2*hardCodedPadding)
+        //let itemsPerRow: CGFloat = 4
+        //let hardCodedPadding: CGFloat = 5
+       // let itemWidth = (collectionView.bounds.width/itemsPerRow) - hardCodedPadding
+        //let itemHeight = collectionView.bounds.height - (2*hardCodedPadding)
         collectionView.backgroundColor = JSIColor
-        return CGSize(width: itemWidth, height: itemHeight)
+        //return CGSize(width: itemWidth, height: itemHeight)
+        //return CGSize(width: width+10, height: 80);
+        return CGSize(width: 90, height: 80);
     }
-    
-    
-    
-    
+}
+
+extension String
+{
+    func width(withConstrainedHeight height: CGFloat, font: UIFont) -> CGFloat
+    {
+        let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height);
+        
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: font], context: nil)
+        
+        return boundingBox.width;
+    }
 }

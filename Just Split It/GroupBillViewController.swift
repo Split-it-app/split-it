@@ -16,16 +16,18 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var ItemTableView: UITableView!
     //@IBOutlet weak var priceTableView: UITableView!
     
+    let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
+    let darkColor = UIColor(red: 59/255.0, green: 58/255.0, blue: 54/255.0, alpha: 1.0)
     let frostColor = UIColor(red: 223/255.0, green: 236/255.0, blue: 229/255.0, alpha: 1.0)
     let JSIColor = UIColor(red: 64/255.0, green: 173/255.0, blue: 98/255.0, alpha: 1.0)
     
     var model:ModelClass = ModelClass()
     
-    var groupBill = GroupBill() // this is the user-selected group bill is carried over from ViewController
+    var groupBill = GroupBill() // this is the user-selected group bill that is carried over from ViewController
     
     var itemsArray:[Item] = [Item]()
     var friendsArray:[Friend] = [Friend]()
-    var totalPrice = 100.0
+    var totalPrice: Float = 0.0
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,9 +45,16 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
        // let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
         self.view.backgroundColor = JSIColor
         self.FriendTableView.backgroundColor = JSIColor
+        self.FriendTableView.separatorColor = JSIColor
         self.ItemTableView.backgroundColor = JSIColor
         
         navigationController?.navigationBar.barTintColor = JSIColor
+        
+        for item in itemsArray {
+            totalPrice+=item.price
+            print("item name: \(item.name)")
+            print("total price = \(totalPrice)")
+        }
     
     }
 
@@ -73,15 +82,9 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
        var showPrice = ""
-        if (tableView == self.ItemTableView){
-        /*
-            for i in itemsArray {
-                totalPrice += itemsArray[i].price
-            }
-        */
-            totalPrice = 16
+       if (tableView == self.ItemTableView){
             showPrice = "Total $ \(totalPrice)0"
-        }
+       }
         return showPrice
     }
     
@@ -140,9 +143,6 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
             let itemCell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! itemListTableViewCell
             
            // let mintColor2 = UIColor(red: 219/255.0, green: 233/255.0, blue: 216/255.0, alpha: 1.0)
-            let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
-            
-            let darkColor = UIColor(red: 59/255.0, green: 58/255.0, blue: 54/255.0, alpha: 1.0)
             
             itemCell.Title.text = itemsArray[indexPath.row].name
             itemCell.Title.font = UIFont (name: "PingFangHK-Regular", size: 20)
@@ -165,7 +165,6 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
             friendListCell.friendArray = self.friendsArray
             
            // let mintColor2 = UIColor(red: 219/255.0, green: 233/255.0, blue: 216/255.0, alpha: 1.0)
-            let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
             
             friendListCell.backgroundColor = JSIColor
             

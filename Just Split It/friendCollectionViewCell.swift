@@ -11,7 +11,7 @@ class friendCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var friendNameLabel: UILabel!;
     
-    var friendNameFont:UIFont!;
+    var friendNameFont:UIFont = UIFont (name: "PingFangHK-Regular", size: 20)!
     //static let friendNameFont:UIFont = UIFont.systemFont(ofSize: 17, weight: UIFont.Weight.thin);
     
     var friendName: String = ""
@@ -19,6 +19,7 @@ class friendCollectionViewCell: UICollectionViewCell {
         didSet
         {
             friendNameLabel.text = friendName;
+            friendNameLabel.textAlignment = NSTextAlignment.center; 
             friendNameLabel.font = friendNameFont;
         }
     }
