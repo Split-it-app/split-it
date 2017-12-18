@@ -89,8 +89,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         model.addBill(groupBill: groupBill2)
         model.addBill(groupBill: groupBill3)
         
-        let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
-        let mintColor2 = UIColor(red: 219/255.0, green: 233/255.0, blue: 216/255.0, alpha: 1.0)
+        //let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
+        //let mintColor2 = UIColor(red: 219/255.0, green: 233/255.0, blue: 216/255.0, alpha: 1.0)
         let JSIColor = UIColor(red: 64/255.0, green: 173/255.0, blue: 98/255.0, alpha: 1.0)
         
         self.view.backgroundColor = JSIColor
@@ -116,10 +116,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let billCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "billCell")
         //let billCell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "billCell")
       
-        let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
+        //let mintColor = UIColor(red: 192/255.0, green: 223/255.0, blue: 217/255.0, alpha: 1.0)
         //let mintColor2 = UIColor(red: 219/255.0, green: 233/255.0, blue: 216/255.0, alpha: 1.0)
         let frostColor = UIColor(red: 233/255.0, green: 236/255.0, blue: 229/255.0, alpha: 1.0)
-        let darkColor = UIColor(red: 59/255.0, green: 58/255.0, blue: 54/255.0, alpha: 1.0)
+        //let darkColor = UIColor(red: 59/255.0, green: 58/255.0, blue: 54/255.0, alpha: 1.0)
         let JSIColor = UIColor(red: 64/255.0, green: 173/255.0, blue: 98/255.0, alpha: 1.0)
         
         billCell.textLabel?.text = model.groupBillArray[indexPath.row].getBillName()
@@ -152,11 +152,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             GroupBillVC.groupBill =  model.groupBillArray[row]
         }
     }
-    
-
-    
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

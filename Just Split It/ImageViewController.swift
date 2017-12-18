@@ -17,7 +17,7 @@ class ImageViewController: UIViewController {
 	//Variable that's going to receive the UIImage
 	var capturedImageRef: UIImage!
 	var rawTextData: String!
-	
+	var newGroupBill: GroupBill!
 	
 	// Tesseract Image Recognition
 	func performImageRecognition(_ image: UIImage) {
@@ -37,6 +37,11 @@ class ImageViewController: UIViewController {
 		}
 	}
 	
+	//parsing rawText into a GroupBill
+	func parseText(rawText: String) {
+		newGroupBill = GroupBill(name: "New Bill")
+	}
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		//Set image to the imageView
@@ -53,8 +58,12 @@ class ImageViewController: UIViewController {
 		let scaledImage = imageView.image?.scaleImage(1200)
 		performImageRecognition(scaledImage!)
 		
+		//parse text and save it to newGroupBill
+		parseText(rawText: rawTextData)
+		
 		//Segue to next view
-		self.performSegue(withIdentifier: "showRawDataSegue", sender: self)
+		//self.performSegue(withIdentifier: "showRawDataSegue", sender: self)
+		self.performSegue(withIdentifier: "showNewBillSegue", sender: self)
 	}
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -62,6 +71,10 @@ class ImageViewController: UIViewController {
 			
 			let destination = segue.destination as! RawDataViewController
 			destination.rawData = self.rawTextData!
+		} else if segue.identifier == "showNewBillSegue" {
+			
+			let destination = segue.destination as! GroupBillViewController
+			destination.groupBill = newGroupBill;
 		}
 	}
 	
