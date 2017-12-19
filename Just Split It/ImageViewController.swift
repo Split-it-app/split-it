@@ -90,7 +90,7 @@ class ImageViewController: UIViewController {
 	
 	@IBAction func onDigitizeClicked() {
 		//Scale image to get the best results
-		let scaledImage = imageView.image?.scaleImage(1200)
+		let scaledImage = imageView.image?.scaleImage(1600)
 		performImageRecognition(scaledImage!)
 		
 		//parse text and save it to newGroupBill

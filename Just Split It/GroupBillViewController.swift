@@ -148,7 +148,7 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
             itemCell.Title.font = UIFont (name: "PingFangHK-Regular", size: 20)
             itemCell.Title.textColor = frostColor
             
-            itemCell.Detail.text = "$" + itemsArray[indexPath.row].price.description + "0"
+            itemCell.Detail.text = "$" + itemsArray[indexPath.row].price.description //+ "0"
             itemCell.Detail.font = UIFont (name: "PingFangHK-Regular", size: 20)
             itemCell.Detail.textColor = frostColor
             
