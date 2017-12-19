@@ -40,6 +40,13 @@ class ImageViewController: UIViewController {
 	//parsing rawText into a GroupBill
 	func parseText(rawText: String) {
 		newGroupBill = GroupBill(name: "New Bill")
+		
+		//Split raw text by lines
+		let lines = rawText.components(separatedBy: "\n")
+		
+		for current in lines {
+			
+		}
 	}
 	
 	override func viewDidLoad() {
