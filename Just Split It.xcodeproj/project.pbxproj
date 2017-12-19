@@ -61,7 +61,7 @@
 		63F7E725499650174E930C74 /* Pods-Just Split It.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Just Split It.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Just Split It/Pods-Just Split It.debug.xcconfig"; sourceTree = "<group>"; };
 		A93B52891FE055FD00DB9861 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		A93F261A1FDC562C00A142ED /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
-		A95BDA961FB3BA5500D1555A /* Just Split It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just Split It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95BDA961FB3BA5500D1555A /* Split It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Split It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95BDA9B1FB3BA5500D1555A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A95BDA9E1FB3BA5500D1555A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A95BDAAA1FB3BA5500D1555A /* Just Split ItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Just Split ItTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +150,7 @@
 		A95BDA971FB3BA5500D1555A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A95BDA961FB3BA5500D1555A /* Just Split It.app */,
+				A95BDA961FB3BA5500D1555A /* Split It.app */,
 				A95BDAAA1FB3BA5500D1555A /* Just Split ItTests.xctest */,
 				A95BDAB51FB3BA5600D1555A /* Just Split ItUITests.xctest */,
 			);
@@ -252,7 +252,7 @@
 			);
 			name = "Just Split It";
 			productName = "Just Split It";
-			productReference = A95BDA961FB3BA5500D1555A /* Just Split It.app */;
+			productReference = A95BDA961FB3BA5500D1555A /* Split It.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A95BDAA91FB3BA5500D1555A /* Just Split ItTests */ = {
@@ -615,7 +615,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Just Split It/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.split-it.nyu";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Split It";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -632,7 +632,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Just Split It/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.split-it.nyu";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Split It";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
