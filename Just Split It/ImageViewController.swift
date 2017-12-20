@@ -48,7 +48,7 @@ class ImageViewController: UIViewController {
 		let taxRegex = try! NSRegularExpression(pattern: "(T|t)(a|A|c|C|o|O|\\s)(X|x)", options: [])
 		let priceRegex = try! NSRegularExpression(pattern: "[0-9]*\\s?[\\.|,]\\s?[0-9][0-9]", options: [])
 		
-		var reachedTax = false
+		var reachedEndOfItems = false
 		
 		//Goes through every line in the receipt
 		for current in lines {
@@ -72,10 +72,14 @@ class ImageViewController: UIViewController {
 				//Adds tax item to the group bill
 				let tax = Item(name: "Tax", price: price?.floatValue ?? 0)
 				newGroupBill.addItem(item: tax)
-				reachedTax = true
-			} else if !reachedTax && priceMatch != nil {
+				reachedEndOfItems = true
+			} else if !reachedEndOfItems && priceMatch != nil {
 				//Converts string to NSString
 				let currNS = current as NSString?
+				if (currNS?.localizedCaseInsensitiveContains("total"))! || (currNS?.localizedCaseInsensitiveContains("amount"))! || (currNS?.localizedCaseInsensitiveContains("due"))! {
+					reachedEndOfItems = true
+					continue
+				}
 				//Takes the range from priceMatch and get's the subtring of the match
 				let price = currNS?.substring(with: priceMatch!.range) as NSString?
 				//Creates a substring of the string that isn't the price to get the name
