@@ -50,10 +50,17 @@ class ImageViewController: UIViewController {
 		
 		//Goes through every line in the receipt
 		for current in lines {
-			//Looks for the first match of a price
-			let priceMatch = priceRegex.firstMatch(in: current, range: NSRange(location: 0, length: current.count))
+			//Looks for the all matches of a possible price
+			let priceMatches = priceRegex.matches(in: current, range: NSRange(location: 0, length: current.count))
 			//Looks for the first match of the word "tax"
 			let taxMatch = taxRegex.firstMatch(in: current, range: NSRange(location: 0, length: current.count))
+			//Selects the last match of price in the line
+			let priceMatch: NSTextCheckingResult?
+			if priceMatches.count > 0 {
+				priceMatch = priceMatches[priceMatches.count - 1]
+			} else {
+				priceMatch = nil
+			}
 			//Adds tax item if there is a tax and price match
 			if taxMatch != nil && priceMatch != nil {
 				//Converts string to NSString
