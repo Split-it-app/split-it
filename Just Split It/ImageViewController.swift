@@ -48,6 +48,8 @@ class ImageViewController: UIViewController {
 		let taxRegex = try! NSRegularExpression(pattern: "(T|t)(a|A|c|C|o|O|\\s)(X|x)", options: [])
 		let priceRegex = try! NSRegularExpression(pattern: "[0-9]*\\s?[\\.|,]\\s?[0-9][0-9]", options: [])
 		
+		var reachedTax = false
+		
 		//Goes through every line in the receipt
 		for current in lines {
 			//Looks for the all matches of a possible price
@@ -66,20 +68,21 @@ class ImageViewController: UIViewController {
 				//Converts string to NSString
 				let currNS = current as NSString?
 				//Takes the range from priceMatch and get's the subtring of the match
-				let price = currNS?.substring(with: priceMatch!.range) as NSString?
+				let price = currNS?.substring(with: priceMatch!.range).replacingOccurrences(of: " ", with: "").replacingOccurrences(of: ",", with: ".") as NSString?
 				//Adds tax item to the group bill
 				let tax = Item(name: "Tax", price: price?.floatValue ?? 0)
 				newGroupBill.addItem(item: tax)
-			} else if priceMatch != nil {
+				reachedTax = true
+			} else if !reachedTax && priceMatch != nil {
 				//Converts string to NSString
 				let currNS = current as NSString?
 				//Takes the range from priceMatch and get's the subtring of the match
 				let price = currNS?.substring(with: priceMatch!.range) as NSString?
 				//Creates a substring of the string that isn't the price to get the name
 				let nameRange = NSMakeRange(0, priceMatch!.range.location)
-				//Adds tax item to the group bill
-				let tax = Item(name: (currNS?.substring(with: nameRange))!, price: price?.floatValue ?? 0)
-				newGroupBill.addItem(item: tax)
+				//Adds new item to the group bill
+				let newItem = Item(name: (currNS?.substring(with: nameRange))!, price: price?.floatValue ?? 0)
+				newGroupBill.addItem(item: newItem)
 			}
 		}
 	}
