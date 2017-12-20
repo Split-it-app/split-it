@@ -160,22 +160,9 @@
 		A95BDA981FB3BA5500D1555A /* Just Split It */ = {
 			isa = PBXGroup;
 			children = (
+				FD80AF341FE9FAB000CE4DFA /* Models */,
+				FD80AF331FE9FA6F00CE4DFA /* ViewControllers */,
 				A95BDA9D1FB3BA5500D1555A /* Main.storyboard */,
-				FD996F9C1FE610D4003DFAFF /* ImageViewController.swift */,
-				FDCF10451FE0591300606150 /* RawDataViewController.swift */,
-				E54773051FDF16EF00841CFD /* TesseractViewController.swift */,
-				A9947B071FDF04C900BA0E99 /* IndividualBillViewController.swift */,
-				A95BDA9B1FB3BA5500D1555A /* ViewController.swift */,
-				FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */,
-				A993CA791FC38AAF009E3E2F /* GroupBillViewController.swift */,
-				E57FE13E1FDEE1460015F391 /* itemListTableViewCell.swift */,
-				E51CE3861FDB2A01003DE21A /* CategoryRow.swift */,
-				A9607B981FDE047800ABDBEC /* friendCollectionViewCell.swift */,
-				E51CE3881FDB35C3003DE21A /* ModelClass.swift */,
-				A993CA711FC37AD2009E3E2F /* GroupBill.swift */,
-				A993CA751FC37D2C009E3E2F /* Item.swift */,
-				A93F261A1FDC562C00A142ED /* Friend.swift */,
-				FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */,
 				FDCF10391FE041F000606150 /* AppDelegate.swift */,
 				FDCF10381FE041F000606150 /* Base.lproj */,
 				E54773071FDF19F800841CFD /* Supporting Files */,
@@ -222,6 +209,35 @@
 				E54773081FDF1A3A00841CFD /* tessdata */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD80AF331FE9FA6F00CE4DFA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD996F9C1FE610D4003DFAFF /* ImageViewController.swift */,
+				FDCF10451FE0591300606150 /* RawDataViewController.swift */,
+				E54773051FDF16EF00841CFD /* TesseractViewController.swift */,
+				A9947B071FDF04C900BA0E99 /* IndividualBillViewController.swift */,
+				A95BDA9B1FB3BA5500D1555A /* ViewController.swift */,
+				FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */,
+				A993CA791FC38AAF009E3E2F /* GroupBillViewController.swift */,
+				FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FD80AF341FE9FAB000CE4DFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E57FE13E1FDEE1460015F391 /* itemListTableViewCell.swift */,
+				E51CE3861FDB2A01003DE21A /* CategoryRow.swift */,
+				A9607B981FDE047800ABDBEC /* friendCollectionViewCell.swift */,
+				E51CE3881FDB35C3003DE21A /* ModelClass.swift */,
+				A993CA711FC37AD2009E3E2F /* GroupBill.swift */,
+				A993CA751FC37D2C009E3E2F /* Item.swift */,
+				A93F261A1FDC562C00A142ED /* Friend.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		FDCF10491FE06AAC00606150 /* Recovered References */ = {

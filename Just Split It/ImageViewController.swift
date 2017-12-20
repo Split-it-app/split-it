@@ -48,6 +48,7 @@ class ImageViewController: UIViewController {
 		let taxRegex = try! NSRegularExpression(pattern: "(T|t)(a|A|c|C|o|O|\\s)(X|x)", options: [])
 		let priceRegex = try! NSRegularExpression(pattern: "[0-9]*\\s?[\\.|,]\\s?[0-9][0-9]", options: [])
 		
+		//When true, stops adding items
 		var reachedEndOfItems = false
 		
 		//Goes through every line in the receipt
@@ -76,6 +77,7 @@ class ImageViewController: UIViewController {
 			} else if !reachedEndOfItems && priceMatch != nil {
 				//Converts string to NSString
 				let currNS = current as NSString?
+				//Checks if the line has total, amount, or due, and skips them
 				if (currNS?.localizedCaseInsensitiveContains("total"))! || (currNS?.localizedCaseInsensitiveContains("amount"))! || (currNS?.localizedCaseInsensitiveContains("due"))! {
 					reachedEndOfItems = true
 					continue
