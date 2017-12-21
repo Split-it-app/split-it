@@ -184,28 +184,38 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
         }*/
     }
     
-    /*
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        
-        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 40))
-        //self.myTableView.tableFooterView = footerView;
-        
-        /*
-        for item in itemsArray {
-            totalPrice += itemsArray[item].price
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath:
+        IndexPath) -> Bool {
+        if(tableView == self.ItemTableView) {
+            // Return NO if you do not want the specified item to be editable.
+            return true
+        } else {
+            return false
         }
- */
-
-        let label = UILabel(frame: CGRect(x: footerView.frame.origin.x - 15, y: footerView.frame.origin.y, width: footerView.frame.size.width, height: 20))
-        label.textAlignment = NSTextAlignment.right
-        
-        label.text = "Total $ \(totalPrice)"
-        
-        footerView.addSubview(label)
-        
-        return footerView
     }
-    */
+    // Override to support editing the table view.
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row(item) from itemsArray
+        
+            itemsArray.remove(at: indexPath.row)
+            self.ItemTableView.deleteRows(at: [indexPath], with: .fade)
+            
+            //Update total price
+            for item in itemsArray {
+                totalPrice+=item.price
+                print("item name: \(item.name)")
+                print("total price = \(totalPrice)")
+            }
+            
+            //display updated total price in footer
+            //self.viewDidLoad()
+            //self.tableView(ItemTableView, titleForFooterInSection: 1)
+            //footer.textLabel?.text = String(format: "Total $%.02f", totalPrice)
+
+        }
+    }
 
     
     // transfer individual bill to IndividualBillVC

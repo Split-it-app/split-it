@@ -24,7 +24,6 @@ class AddFriendViewController: UIViewController, UITableViewDelegate, UITableVie
         return "Select your items"
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print ("Count: " + groupBill.getItemArray().count.description)
         return groupBill.getItemArray().count
     }
     
@@ -38,13 +37,30 @@ class AddFriendViewController: UIViewController, UITableViewDelegate, UITableVie
         let cell = tableView.cellForRow(at: indexPath)
         let currentColor = cell?.contentView.backgroundColor
         
-        cell?.contentView.backgroundColor = UIColor .yellow
+        if (currentColor == UIColor .yellow){
+            cell?.contentView.backgroundColor = UIColor .white
+        }
+        else{
+            cell?.contentView.backgroundColor = UIColor .yellow
+        }
+        
+        //tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
-        cell?.contentView.backgroundColor = UIColor .yellow
+        let currentColor = cell?.contentView.backgroundColor
+                
+        if (currentColor != UIColor .yellow){
+            cell?.contentView.backgroundColor = UIColor .yellow
+        }
+        else{
+            cell?.contentView.backgroundColor = UIColor .white
+        }
+        
+        
     }
+    
     
     
     
