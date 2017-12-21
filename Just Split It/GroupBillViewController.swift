@@ -225,6 +225,7 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
         else if (segue.identifier == "GroupBillVCtoAddFriendVC"){
             let destination = segue.destination as! AddFriendViewController
             destination.groupBill = self.groupBill;
+            destination.model = self.model
         }
     }
     

@@ -56,8 +56,6 @@ class AddFriendViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     
-    
-    
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,7 +68,19 @@ class AddFriendViewController: UIViewController, UITableViewDelegate, UITableVie
         // Do any additional setup after loading the view.
         self.view.backgroundColor = JSIColor
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "AddFriendVCtoGroupBillVC"){
+            let destination = segue.destination as! GroupBillViewController
+            destination.model = self.model
+        }
+    }
 
+    
+    
+    
+    
+    
     
     
     
