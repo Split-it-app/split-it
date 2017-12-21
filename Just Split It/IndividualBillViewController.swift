@@ -9,7 +9,7 @@ import UIKit
 
 class IndividualBillViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
-  //@IBOutlet weak var IndividItemTableView: UITableView!
+	//@IBOutlet weak var IndividItemTableView: UITableView!
 	
 	var groupBill: GroupBill?
 	var totals: Array<Total>?
@@ -47,7 +47,12 @@ class IndividualBillViewController: UIViewController, UITableViewDelegate, UITab
     
 
 	func splitBill(bill: GroupBill) {
-	
+		let items = groupBill?.itemArray
+		for item in items! {
+			if item.purchasedBy.count > 0 {
+				
+			}
+		}
 	}
 
 }

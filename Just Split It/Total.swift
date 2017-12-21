@@ -16,4 +16,8 @@ class Total: NSObject {
 		friend = user
 		total = personalTotal
 	}
+	
+	func addTotal(cost: Int) {
+		total += cost
+	}
 }
