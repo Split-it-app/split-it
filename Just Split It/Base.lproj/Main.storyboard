@@ -55,7 +55,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="h4O-tJ-Duk"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Just Split It" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouU-0b-Zij">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Split It" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouU-0b-Zij">
                                 <rect key="frame" x="0.0" y="81" width="375" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="PingFangHK-Thin" family="PingFang HK" pointSize="40"/>
@@ -172,7 +172,7 @@
                         <outlet property="digitizeButton" destination="9Ue-Be-OtH" id="nNt-u4-iSy"/>
                         <outlet property="imageView" destination="Urd-yl-W6o" id="tCB-eV-xjZ"/>
                         <segue destination="0lb-D8-CW4" kind="show" identifier="showRawDataSegue" id="RVj-H8-d2b"/>
-                        <segue destination="PNg-SV-6e6" kind="presentation" identifier="showNewBillSegue" id="996-YX-PAj"/>
+                        <segue destination="PNg-SV-6e6" kind="show" identifier="showNewBillSegue" id="996-YX-PAj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oHa-f3-BFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -418,6 +418,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="996-YX-PAj"/>
+        <segue reference="PgL-yr-8td"/>
     </inferredMetricsTieBreakers>
 </document>
