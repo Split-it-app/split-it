@@ -9,7 +9,7 @@ import UIKit
 
 class IndividualBillViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
-	//@IBOutlet weak var IndividItemTableView: UITableView!
+	@IBOutlet weak var totalsTableView: UITableView!
 	
 	var groupBill: GroupBill?
 	var totals: [Friend:Float]?
@@ -19,18 +19,19 @@ class IndividualBillViewController: UIViewController, UITableViewDelegate, UITab
         super.viewDidLoad()
 
         self.view.backgroundColor = JSIColor
+		self.totalsTableView.backgroundColor = JSIColor
 		
 		totals = [:]
 		
 		splitBill()
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return totals!.count
+	}
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let itemCell = tableView.dequeueReusableCell(withIdentifier: "individItemCell", for: indexPath) as! itemListTableViewCell
+        let itemCell = tableView.dequeueReusableCell(withIdentifier: "totalCell", for: indexPath) as! itemListTableViewCell
         
         
         //itemCell.Title.text = itemsArray[indexPath.row].name
