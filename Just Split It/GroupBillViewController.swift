@@ -49,7 +49,7 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
         self.ItemTableView.backgroundColor = JSIColor
         
         navigationController?.navigationBar.barTintColor = JSIColor
-        
+        totalPrice = 0
         for item in itemsArray {
             totalPrice+=item.price
             print("item name: \(item.name)")
@@ -203,6 +203,7 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
             self.ItemTableView.deleteRows(at: [indexPath], with: .fade)
             
             //Update total price
+            totalPrice = 0
             for item in itemsArray {
                 totalPrice+=item.price
                 print("item name: \(item.name)")
@@ -210,10 +211,7 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
             }
             
             //display updated total price in footer
-            //self.viewDidLoad()
-            //self.tableView(ItemTableView, titleForFooterInSection: 1)
-            //footer.textLabel?.text = String(format: "Total $%.02f", totalPrice)
-
+            tableView.footerView(forSection: indexPath.section)?.textLabel?.text = String(format: "Total $%.02f", totalPrice)
         }
     }
 
