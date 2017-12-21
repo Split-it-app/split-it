@@ -9,6 +9,11 @@ import UIKit
 
 class AddFriendViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var itemTableView: UITableView!
+    
+    
+    
     let JSIColor = UIColor(red: 64/255.0, green: 173/255.0, blue: 98/255.0, alpha: 1.0)
     
     var model:ModelClass = ModelClass()

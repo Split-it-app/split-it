@@ -422,17 +422,14 @@
                                 <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friend's Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXF-jb-2uN">
-                                <rect key="frame" x="38" y="184" width="148" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.25098039215686274" green="0.67843137254901964" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="nJJ-jw-9IT"/>
                     </view>
+                    <connections>
+                        <outlet property="itemTableView" destination="LNu-hl-VfI" id="DGJ-VX-5Ea"/>
+                        <outlet property="nameTextField" destination="oYa-42-l1s" id="YYe-Mj-TUO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gnN-RU-OCA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -458,6 +455,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="sRD-TS-g4I"/>
         <segue reference="996-YX-PAj"/>
     </inferredMetricsTieBreakers>
 </document>
