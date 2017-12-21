@@ -47,7 +47,7 @@ class IndividualBillViewController: UIViewController, UITableViewDelegate, UITab
     
 
 	func splitBill(bill: GroupBill) {
-		let items = groupBill.itemArray
+		let items = groupBill?.itemArray
 		for item in items {
 			if item.purchasedBy.count > 0 {
 				
