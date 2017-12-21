@@ -65,6 +65,8 @@ class AddFriendViewController: UIViewController, UITableViewDelegate, UITableVie
         // add the friend object to groupBill. This friend's name is set by the textField
         groupBill.addFriend(friend: friend)
         
+        
+        
         // Do any additional setup after loading the view.
         self.view.backgroundColor = JSIColor
     }
