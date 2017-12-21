@@ -90,7 +90,7 @@
 		FD996F9C1FE610D4003DFAFF /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		FDCF10371FE041F000606150 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDCF10381FE041F000606150 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = "Supporting Files/Base.lproj"; sourceTree = "<group>"; };
-		FDCF10391FE041F000606150 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Supporting Files/AppDelegate.swift"; sourceTree = "<group>"; };
+		FDCF10391FE041F000606150 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDCF103A1FE041F100606150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDCF10411FE0437F00606150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDCF10451FE0591300606150 /* RawDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawDataViewController.swift; sourceTree = "<group>"; };
@@ -163,7 +163,6 @@
 				FD80AF341FE9FAB000CE4DFA /* Models */,
 				FD80AF331FE9FA6F00CE4DFA /* ViewControllers */,
 				A95BDA9D1FB3BA5500D1555A /* Main.storyboard */,
-				FDCF10391FE041F000606150 /* AppDelegate.swift */,
 				FDCF10381FE041F000606150 /* Base.lproj */,
 				E54773071FDF19F800841CFD /* Supporting Files */,
 				FDCF10401FE0437F00606150 /* LaunchScreen.storyboard */,
@@ -203,6 +202,7 @@
 		E54773071FDF19F800841CFD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FDCF10391FE041F000606150 /* AppDelegate.swift */,
 				FDCF10371FE041F000606150 /* Info.plist */,
 				FDCF103A1FE041F100606150 /* Assets.xcassets */,
 				FD996F9A1FE60EBC003DFAFF /* Split-it_Logo.png */,
