@@ -148,7 +148,6 @@ class ImageViewController: UIViewController {
 			let destination = segue.destination as! RawDataViewController
 			destination.rawData = self.rawTextData!
 		} else if segue.identifier == "showNewBillSegue" {
-			
 			let destination = segue.destination as! GroupBillViewController
 			destination.groupBill = newGroupBill;
 		}

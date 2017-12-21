@@ -10,11 +10,14 @@ import UIKit
 class IndividualBillViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
   //@IBOutlet weak var IndividItemTableView: UITableView!
-    
+	
+	var groupBill: GroupBill?
+	let JSIColor = UIColor(red: 64/255.0, green: 173/255.0, blue: 98/255.0, alpha: 1.0)
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = JSIColor
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,14 +45,8 @@ class IndividualBillViewController: UIViewController, UITableViewDelegate, UITab
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+//	func Array[Friend] splitBill(bill: GroupBill) {
+//		
+//	}
 
 }
