@@ -277,11 +277,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="friendCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendListCell" rowHeight="106" id="IdE-Q8-aHP" customClass="CategoryRow" customModule="Split_It" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="289" height="106"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="friendCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendListCell" rowHeight="107" id="IdE-Q8-aHP" customClass="CategoryRow" customModule="Split_It" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="289" height="107"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IdE-Q8-aHP" id="VCn-oP-Iyh">
-                                            <rect key="frame" x="0.0" y="0.0" width="289" height="105.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="289" height="106.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5x8-N4-SjX">
@@ -338,9 +338,13 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="348-2W-ahA">
-                                <rect key="frame" x="305" y="115" width="30" height="30"/>
+                                <rect key="frame" x="291" y="115" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <segue destination="cPM-sz-BU6" kind="show" id="Y6f-9p-bRw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
