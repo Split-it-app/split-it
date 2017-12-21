@@ -164,21 +164,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     // Override to support editing the table view.
     
-    func tableView(_ tableView: UITableView, commit
-        editingStyle: UITableViewCellEditingStyle, forRowAt indexPath:
-        IndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-            //delete GroupBill from array
+            // Delete the row(GroupBil) from GroupBillArray
             model.groupBillArray.remove(at: indexPath.row)
-       }
-        else if editingStyle == .insert {
-            // do nothing
+           tableView.deleteRows(at: [indexPath], with: .fade)
+          
         }
-        
     }
-    
+ 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "VCtoGroupBillVC" {
             
