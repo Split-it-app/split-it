@@ -313,7 +313,7 @@
                                                             <color key="backgroundColor" red="0.69982367316717609" green="1" blue="0.74289240632187348" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <connections>
                                                                 <outlet property="friendNameLabel" destination="TP9-gt-Tld" id="JZk-FF-2cc"/>
-                                                                <segue destination="lf7-sh-6eb" kind="show" id="xIl-IJ-bwW"/>
+                                                                <segue destination="lf7-sh-6eb" kind="show" identifier="GroupBillVCtoIndividualBillVC" id="xIl-IJ-bwW"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -343,7 +343,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="+"/>
                                 <connections>
-                                    <segue destination="cPM-sz-BU6" kind="show" id="Y6f-9p-bRw"/>
+                                    <segue destination="cPM-sz-BU6" kind="show" identifier="GroupBillVCtoAddFriendVC" id="Y6f-9p-bRw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -382,8 +382,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Your Friend's Name Here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oYa-42-l1s">
-                                <rect key="frame" x="106" y="138" width="253" height="30"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LNu-hl-VfI">
+                                <rect key="frame" x="0.0" y="176" width="375" height="491"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="9gi-tt-axH">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9gi-tt-axH" id="2K2-Sa-cvS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="cPM-sz-BU6" id="cWk-BI-zgH"/>
+                                    <outlet property="delegate" destination="cPM-sz-BU6" id="cg3-Bq-KEr"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Friend Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oYa-42-l1s">
+                                <rect key="frame" x="79" y="108" width="216" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>

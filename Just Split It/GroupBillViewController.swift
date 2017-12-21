@@ -213,6 +213,10 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
         if (segue.identifier == "GroupBillVCtoIndividualBillVC"){
             
         }
+        else if (segue.identifier == "GroupBillVCtoAddFriendVC"){
+            let AddFriendVC = AddFriendViewController()
+            AddFriendVC.groupBill = self.groupBill
+        }
     }
     
     override func didReceiveMemoryWarning() {

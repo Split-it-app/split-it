@@ -7,20 +7,38 @@
 
 import UIKit
 
-class AddFriendViewController: UIViewController {
-
+class AddFriendViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     let JSIColor = UIColor(red: 64/255.0, green: 173/255.0, blue: 98/255.0, alpha: 1.0)
     
     var model:ModelClass = ModelClass()
     
-    var groupBill = GroupBill() // this is the user-selected group bill that is carried over from ViewController
+    var groupBill = GroupBill() // this is the user-selected group bill that is carried over from GroupBillViewController
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Select your items"
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return groupBill.getItemArray().count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let itemCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "itemCell")
+        itemCell.textLabel?.text = groupBill.getItemArray()[indexPath.row].name
+        return itemCell
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.view.backgroundColor = JSIColor
     }
+
+    
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
