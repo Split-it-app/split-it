@@ -220,8 +220,9 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
     
     // transfer individual bill to IndividualBillVC
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "GroupBillVCtoIndividualBillVC"){
-            
+        if (segue.identifier == "splitBillSegue"){
+			let destination = segue.destination as! IndividualBillViewController
+			destination.groupBill = self.groupBill;
         }
         else if (segue.identifier == "GroupBillVCtoAddFriendVC"){
             let destination = segue.destination as! AddFriendViewController

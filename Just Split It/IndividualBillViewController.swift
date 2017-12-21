@@ -9,16 +9,20 @@ import UIKit
 
 class IndividualBillViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
-  //@IBOutlet weak var IndividItemTableView: UITableView!
+	//@IBOutlet weak var IndividItemTableView: UITableView!
 	
 	var groupBill: GroupBill?
-	var totals: Array<Total>?
+	var totals: [Friend:Float]?
 	let JSIColor = UIColor(red: 64/255.0, green: 173/255.0, blue: 98/255.0, alpha: 1.0)
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.backgroundColor = JSIColor
+		
+		totals = [:]
+		
+		splitBill()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -46,8 +50,15 @@ class IndividualBillViewController: UIViewController, UITableViewDelegate, UITab
     }
     
 
-	func splitBill(bill: GroupBill) {
-	
+	func splitBill() {
+		let items = groupBill?.itemArray
+		for item in items! {
+			if item.name != "Tax" && item.purchasedBy.count > 0 {
+				for friend in item.purchasedBy {
+					totals![friend] = item.price/Float(item.purchasedBy.count) + totals![friend]!
+				}
+			}
+		}
 	}
 
 }
