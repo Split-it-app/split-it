@@ -27,6 +27,13 @@ class AddFriendViewController: UIViewController, UITableViewDelegate, UITableVie
         itemCell.textLabel?.text = groupBill.getItemArray()[indexPath.row].name
         return itemCell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    
+    
         
     override func viewDidLoad() {
         super.viewDidLoad()
