@@ -313,7 +313,6 @@
                                                             <color key="backgroundColor" red="0.69982367316717609" green="1" blue="0.74289240632187348" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <connections>
                                                                 <outlet property="friendNameLabel" destination="TP9-gt-Tld" id="JZk-FF-2cc"/>
-                                                                <segue destination="lf7-sh-6eb" kind="show" id="xIl-IJ-bwW"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -350,6 +349,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Prg-l9-WSa"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dtD-T5-ges">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="kZt-sI-uqg">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qZM-Mw-EMs">
+                                <rect key="frame" x="276" y="5.5" width="83" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Split It"/>
+                                <connections>
+                                    <segue destination="lf7-sh-6eb" kind="show" identifier="splitBillSegue" id="sRD-TS-g4I"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="FriendTableView" destination="Tg3-rq-FBC" id="pS7-YK-X9T"/>
                         <outlet property="ItemTableView" destination="TGc-Sx-pGH" id="Beo-rJ-4cE"/>
@@ -433,6 +445,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PgL-yr-8td"/>
+        <segue reference="996-YX-PAj"/>
     </inferredMetricsTieBreakers>
 </document>
