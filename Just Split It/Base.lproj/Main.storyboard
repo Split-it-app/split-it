@@ -378,10 +378,10 @@
             </objects>
             <point key="canvasLocation" x="1744.8" y="-158.77061469265368"/>
         </scene>
-        <!--Add Friend View Controller-->
+        <!--New Friend-->
         <scene sceneID="jKZ-lZ-EVm">
             <objects>
-                <viewController storyboardIdentifier="AddFriendViewController" id="cPM-sz-BU6" customClass="AddFriendViewController" customModule="Split_It" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddFriendViewController" title="New Friend" id="cPM-sz-BU6" customClass="AddFriendViewController" customModule="Split_It" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wWh-QL-D9b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -446,7 +446,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sRD-TS-g4I"/>
         <segue reference="996-YX-PAj"/>
     </inferredMetricsTieBreakers>
 </document>
