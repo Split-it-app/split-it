@@ -337,7 +337,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="348-2W-ahA">
-                                <rect key="frame" x="291" y="115" width="30" height="30"/>
+                                <rect key="frame" x="313" y="115" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="+"/>
@@ -413,6 +413,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bCe-ch-hLt"/>
                     </view>
+                    <connections>
+                        <outlet property="totalsTableView" destination="jDP-Zc-kQO" id="TYz-an-vc1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AC3-Ij-wtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

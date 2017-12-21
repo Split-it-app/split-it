@@ -34,7 +34,7 @@ class CategoryRow: UITableViewCell, UICollectionViewDataSource, UICollectionView
         // test
         print ("category friend count: " + friendArray.count.description)
         //print(friendArray[0].name)
-        return friendArray.count+1
+        return friendArray.count
     }
     
     // extension: UICollectionViewDataSource
@@ -43,10 +43,6 @@ class CategoryRow: UITableViewCell, UICollectionViewDataSource, UICollectionView
         
         let friendCellCollection = collectionView.dequeueReusableCell(withReuseIdentifier: "friendCellCollection", for: indexPath) as! friendCollectionViewCell
         
-        if(indexPath.row >= friendArray.count){
-            friendCellCollection.friendName = "+" //Add a friend
-            friendCellCollection.backgroundColor = frostColor
-        } else{
             friendCellCollection.friendName = friendArray[indexPath.row].name
             if(friendArray[indexPath.row].color == JSIColor){
                 //randomly set color of friend if user hasn't designated a color yet
@@ -55,7 +51,6 @@ class CategoryRow: UITableViewCell, UICollectionViewDataSource, UICollectionView
             } else {
                 friendCellCollection.backgroundColor = friendArray[indexPath.row].color
             }
-        }
         
         friendCellCollection.friendNameFont = UIFont (name: "PingFangHK-Regular", size: 20)!
         
