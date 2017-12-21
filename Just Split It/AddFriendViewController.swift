@@ -12,7 +12,11 @@ class AddFriendViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var itemTableView: UITableView!
     
-    
+    // save friend name after button is pressed
+    @IBAction func enterPressed(_ sender: Any) {
+        friend.name = nameTextField.text!
+        print("set friend name to: " + nameTextField.text!)
+    }
     
     let JSIColor = UIColor(red: 64/255.0, green: 173/255.0, blue: 98/255.0, alpha: 1.0)
     
@@ -20,11 +24,13 @@ class AddFriendViewController: UIViewController, UITableViewDelegate, UITableVie
     
     var groupBill = GroupBill() // this is the user-selected group bill that is carried over from GroupBillViewController
     
+    var friend = Friend()
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Select your items"
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return groupBill.getItemArray().count
+        return groupBill.getItemArray().count - 1 // to remove tax
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -33,32 +39,20 @@ class AddFriendViewController: UIViewController, UITableViewDelegate, UITableVie
         return itemCell
     }
     
+    // For selecting and assigning items to friend
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // find selected cell
         let cell = tableView.cellForRow(at: indexPath)
-        let currentColor = cell?.contentView.backgroundColor
+        cell?.contentView.backgroundColor = UIColor .yellow
+        print("selected row index" + indexPath.row.description)
         
-        if (currentColor == UIColor .yellow){
-            cell?.contentView.backgroundColor = UIColor .white
-        }
-        else{
-            cell?.contentView.backgroundColor = UIColor .yellow
-        }
-        
-        //tableView.deselectRow(at: indexPath, animated: true)
+        // assign friend to the item that the user has selected
+        groupBill.getItemArray()[indexPath.row].appendPurchasedBy(user: friend)
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
-        let currentColor = cell?.contentView.backgroundColor
-                
-        if (currentColor != UIColor .yellow){
-            cell?.contentView.backgroundColor = UIColor .yellow
-        }
-        else{
-            cell?.contentView.backgroundColor = UIColor .white
-        }
-        
-        
+        cell?.contentView.backgroundColor = UIColor .yellow        
     }
     
     
@@ -67,7 +61,10 @@ class AddFriendViewController: UIViewController, UITableViewDelegate, UITableVie
         
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // add the friend object to groupBill. This friend's name is set by the textField
+        groupBill.addFriend(friend: friend)
+        
         // Do any additional setup after loading the view.
         self.view.backgroundColor = JSIColor
     }
