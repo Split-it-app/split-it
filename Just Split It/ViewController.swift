@@ -157,6 +157,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath:
+        IndexPath) -> Bool {
+        // Return NO if you do not want the specified item to be editable.
+        return true
+    }
+    // Override to support editing the table view.
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row(GroupBil) from GroupBillArray
+            model.groupBillArray.remove(at: indexPath.row)
+           tableView.deleteRows(at: [indexPath], with: .fade)
+          
+        }
+    }
+ 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "VCtoGroupBillVC" {
             
