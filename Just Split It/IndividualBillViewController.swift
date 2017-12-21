@@ -12,11 +12,12 @@ class IndividualBillViewController: UIViewController, UITableViewDelegate, UITab
   //@IBOutlet weak var IndividItemTableView: UITableView!
 	
 	var groupBill: GroupBill?
+	let JSIColor = UIColor(red: 64/255.0, green: 173/255.0, blue: 98/255.0, alpha: 1.0)
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = JSIColor
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

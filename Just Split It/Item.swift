@@ -24,6 +24,10 @@ public class Item:NSObject {
         self.price = price
 		self.purchasedBy = [Friend]()
     }
+	
+	func appendPurchasedBy(user: Friend) {
+		purchasedBy.append(user);
+	}
 }
 
 
