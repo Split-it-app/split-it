@@ -72,6 +72,10 @@ class IndividualBillViewController: UIViewController, UITableViewDelegate, UITab
 					totals![friend] = item.price/Float(item.purchasedBy.count) + totals![friend]!
 					print(item.price/Float(item.purchasedBy.count) + totals![friend]!)
 				}
+			} else if item.name == "Tax" {
+				for friend in (groupBill?.friendArray)! {
+					totals![friend] = item.price/Float((groupBill?.friendArray.count)!) + totals![friend]!
+				}
 			}
 		}
 		print("printing")
