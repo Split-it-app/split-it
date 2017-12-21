@@ -27,6 +27,7 @@
 		E547730C1FDF1A9F00841CFD /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E547730D1FDF1A9F00841CFD /* TesseractOCR.framework */; };
 		E547730F1FDF1AAC00841CFD /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E547730E1FDF1AAC00841CFD /* CoreImage.framework */; };
 		E57FE13F1FDEE1460015F391 /* itemListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FE13E1FDEE1460015F391 /* itemListTableViewCell.swift */; };
+		FD12B6711FEB722500DBE679 /* totalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD12B6701FEB722500DBE679 /* totalTableViewCell.swift */; };
 		FD2837B51FDD0F7E00DD1F83 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */; };
 		FD2837B81FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */; };
 		FD80AF361FEB4EB200CE4DFA /* Total.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD80AF351FEB4EB200CE4DFA /* Total.swift */; };
@@ -87,6 +88,7 @@
 		E547730D1FDF1A9F00841CFD /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E547730E1FDF1AAC00841CFD /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		E57FE13E1FDEE1460015F391 /* itemListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemListTableViewCell.swift; sourceTree = "<group>"; };
+		FD12B6701FEB722500DBE679 /* totalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = totalTableViewCell.swift; sourceTree = "<group>"; };
 		FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupBillsTableViewController.swift; sourceTree = "<group>"; };
 		FD80AF351FEB4EB200CE4DFA /* Total.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Total.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 		FD80AF341FE9FAB000CE4DFA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FD12B6701FEB722500DBE679 /* totalTableViewCell.swift */,
 				E57FE13E1FDEE1460015F391 /* itemListTableViewCell.swift */,
 				E51CE3861FDB2A01003DE21A /* CategoryRow.swift */,
 				A9607B981FDE047800ABDBEC /* friendCollectionViewCell.swift */,
@@ -453,6 +456,7 @@
 				A9947B081FDF04C900BA0E99 /* IndividualBillViewController.swift in Sources */,
 				A993CA761FC37D2C009E3E2F /* Item.swift in Sources */,
 				A95BDA9C1FB3BA5500D1555A /* ViewController.swift in Sources */,
+				FD12B6711FEB722500DBE679 /* totalTableViewCell.swift in Sources */,
 				E51CE3891FDB35C3003DE21A /* ModelClass.swift in Sources */,
 				A993CA721FC37AD2009E3E2F /* GroupBill.swift in Sources */,
 				FD2837B81FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift in Sources */,
