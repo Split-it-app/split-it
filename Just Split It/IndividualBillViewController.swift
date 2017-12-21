@@ -45,8 +45,8 @@ class IndividualBillViewController: UIViewController, UITableViewDelegate, UITab
     }
     
 
-	func Array[Friend] splitBill(bill: GroupBill) {
-		
-	}
+//	func Array[Friend] splitBill(bill: GroupBill) {
+//		
+//	}
 
 }

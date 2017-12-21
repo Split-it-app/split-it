@@ -9,10 +9,10 @@ import UIKit
 
 class Total: NSObject {
 	var friend: Friend
-	var total: int
+	var total: Int
 	
 	
-	override init(user: Friend, personalTotal: int){
+	init(user: Friend, personalTotal: Int){
 		friend = user
 		total = personalTotal
 	}
