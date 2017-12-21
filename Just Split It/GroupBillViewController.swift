@@ -83,7 +83,7 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
        var showPrice = ""
        if (tableView == self.ItemTableView){
-            showPrice = "Total $ \(totalPrice)0"
+            showPrice = String(format: "Total $%.02f", totalPrice)
        }
         return showPrice
     }
@@ -148,7 +148,7 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
             itemCell.Title.font = UIFont (name: "PingFangHK-Regular", size: 20)
             itemCell.Title.textColor = frostColor
             
-            itemCell.Detail.text = "$" + itemsArray[indexPath.row].price.description + "0"
+            itemCell.Detail.text = String(format: "$%.02f", itemsArray[indexPath.row].price)
             itemCell.Detail.font = UIFont (name: "PingFangHK-Regular", size: 20)
             itemCell.Detail.textColor = frostColor
             
