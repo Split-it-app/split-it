@@ -8,16 +8,6 @@
 import UIKit
 
 class AddFriendViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var itemTableView: UITableView!
-    
-    // save friend name after button is pressed
-    @IBAction func enterPressed(_ sender: Any) {
-        friend.name = nameTextField.text!
-        print("set friend name to: " + nameTextField.text!)
-    }
-    
     let JSIColor = UIColor(red: 64/255.0, green: 173/255.0, blue: 98/255.0, alpha: 1.0)
     
     var model:ModelClass = ModelClass()
@@ -25,6 +15,48 @@ class AddFriendViewController: UIViewController, UITableViewDelegate, UITableVie
     var groupBill = GroupBill() // this is the user-selected group bill that is carried over from GroupBillViewController
     
     var friend = Friend()
+    
+    //Want 4 different colors for the labels
+    let salmonColor = UIColor(red: 250/255.0, green: 124/255.0, blue: 146/255.0, alpha: 1.0)
+    let rainColor = UIColor(red: 110/255.0, green: 196/255.0, blue: 219/255.0, alpha: 1.0)
+    let buttermilkColor = UIColor(red: 255/255.0, green: 247/255.0, blue: 192/255.0, alpha: 1.0)
+    let lavenderColor = UIColor(red: 176/255.0, green: 170/255.0, blue: 194/255.0, alpha: 1.0)
+
+    @IBOutlet weak var nameTextField: UITextField!
+  
+    @IBOutlet weak var itemTableView: UITableView!
+    
+    @IBOutlet weak var rainButton: UIButton!
+    
+    @IBAction func rainButtonPressed(_ sender: Any) {
+        friend.color = rainColor
+    }
+    
+    @IBOutlet weak var salmonButton: UIButton!
+    
+    @IBAction func salmonButtonPressed(_ sender: Any) {
+        friend.color = salmonColor
+    }
+    
+    @IBOutlet weak var buttermilkButton: UIButton!
+    
+    @IBAction func buttermilkButtonPressed(_ sender: Any) {
+        friend.color = buttermilkColor
+    }
+    
+    @IBOutlet weak var lavenderButton: UIButton!
+    
+    @IBAction func lavenderButtonPressed(_ sender: Any) {
+        friend.color = lavenderColor
+    }
+    
+    // save friend name after button is pressed
+   
+    @IBAction func enterPressed(_ sender: Any) {
+        friend.name = nameTextField.text!
+        print("set friend name to: " + nameTextField.text!)
+        
+    }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Select your items"
@@ -67,6 +99,11 @@ class AddFriendViewController: UIViewController, UITableViewDelegate, UITableVie
         
         // Do any additional setup after loading the view.
         self.view.backgroundColor = JSIColor
+        
+        rainButton.backgroundColor = rainColor
+        salmonButton.backgroundColor = salmonColor
+        buttermilkButton.backgroundColor = buttermilkColor
+        lavenderButton.backgroundColor = lavenderColor
     }
 
     
