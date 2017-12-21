@@ -12,6 +12,7 @@ class IndividualBillViewController: UIViewController, UITableViewDelegate, UITab
   //@IBOutlet weak var IndividItemTableView: UITableView!
 	
 	var groupBill: GroupBill?
+	var totals: Array<Total>?
 	let JSIColor = UIColor(red: 64/255.0, green: 173/255.0, blue: 98/255.0, alpha: 1.0)
 	
     override func viewDidLoad() {
@@ -45,8 +46,8 @@ class IndividualBillViewController: UIViewController, UITableViewDelegate, UITab
     }
     
 
-//	func Array[Friend] splitBill(bill: GroupBill) {
-//		
-//	}
+	func splitBill(bill: GroupBill) {
+	
+	}
 
 }

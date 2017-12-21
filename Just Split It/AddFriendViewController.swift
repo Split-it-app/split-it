@@ -35,7 +35,15 @@ class AddFriendViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        let currentColor = cell?.contentView.backgroundColor
         
+        cell?.contentView.backgroundColor = UIColor .yellow
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.contentView.backgroundColor = UIColor .yellow
     }
     
     
