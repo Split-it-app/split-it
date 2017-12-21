@@ -88,14 +88,14 @@ class AddFriendViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     
-    
-    
         
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // add the friend object to groupBill. This friend's name is set by the textField
         groupBill.addFriend(friend: friend)
+        
+        
         
         // Do any additional setup after loading the view.
         self.view.backgroundColor = JSIColor
@@ -105,7 +105,19 @@ class AddFriendViewController: UIViewController, UITableViewDelegate, UITableVie
         buttermilkButton.backgroundColor = buttermilkColor
         lavenderButton.backgroundColor = lavenderColor
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "AddFriendVCtoGroupBillVC"){
+            let destination = segue.destination as! GroupBillViewController
+            destination.model = self.model
+        }
+    }
 
+    
+    
+    
+    
+    
     
     
     

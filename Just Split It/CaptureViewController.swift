@@ -14,6 +14,8 @@ class CaptureViewController: UIViewController {
     @IBOutlet weak var previewView: UIView!
     @IBOutlet weak var captureButton: UIButton!
     
+    var model: ModelClass = ModelClass()
+    
     //Allows us to transfer data between one or more device inputs
     var captureSession: AVCaptureSession?
     //Allows us to render the live feed from the camera to the view
@@ -87,8 +89,10 @@ class CaptureViewController: UIViewController {
         if segue.identifier == "showPictureSegue" {
             let destination = segue.destination as! ImageViewController
             destination.capturedImageRef = self.image!
+            destination.model = self.model
         }
     }
+    
 
 }
 
