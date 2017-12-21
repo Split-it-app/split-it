@@ -10,7 +10,9 @@ import UIKit
 class IndividualBillViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
   //@IBOutlet weak var IndividItemTableView: UITableView!
-    
+	
+	var groupBill: GroupBill?
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
