@@ -198,8 +198,8 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row(item) from itemsArray
-            groupBill.itemArray.remove(at: indexPath.row)
-           // itemsArray.remove(at: indexPath.row)
+        
+            itemsArray.remove(at: indexPath.row)
             self.ItemTableView.deleteRows(at: [indexPath], with: .fade)
             
             //Update total price
@@ -212,6 +212,8 @@ class GroupBillViewController: UIViewController, UITableViewDelegate, UITableVie
             //display updated total price in footer
             //self.viewDidLoad()
             //self.tableView(ItemTableView, titleForFooterInSection: 1)
+            //footer.textLabel?.text = String(format: "Total $%.02f", totalPrice)
+
         }
     }
 
