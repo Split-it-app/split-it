@@ -24,6 +24,7 @@ class AddFriendViewController: UIViewController, UITableViewDelegate, UITableVie
         return "Select your items"
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print ("Count: " + groupBill.getItemArray().count.description)
         return groupBill.getItemArray().count
     }
     
