@@ -13,6 +13,7 @@
 		A95BDAAF1FB3BA5500D1555A /* Just_Split_ItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95BDAAE1FB3BA5500D1555A /* Just_Split_ItTests.swift */; };
 		A95BDABA1FB3BA5600D1555A /* Just_Split_ItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95BDAB91FB3BA5600D1555A /* Just_Split_ItUITests.swift */; };
 		A9607B991FDE047800ABDBEC /* friendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9607B981FDE047800ABDBEC /* friendCollectionViewCell.swift */; };
+		A98BCB951FEB37E100E87A43 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98BCB941FEB37E100E87A43 /* AddFriendViewController.swift */; };
 		A993CA721FC37AD2009E3E2F /* GroupBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = A993CA711FC37AD2009E3E2F /* GroupBill.swift */; };
 		A993CA761FC37D2C009E3E2F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A993CA751FC37D2C009E3E2F /* Item.swift */; };
 		A993CA7A1FC38AAF009E3E2F /* GroupBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A993CA791FC38AAF009E3E2F /* GroupBillViewController.swift */; };
@@ -71,6 +72,7 @@
 		A95BDAB91FB3BA5600D1555A /* Just_Split_ItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Just_Split_ItUITests.swift; sourceTree = "<group>"; };
 		A95BDABB1FB3BA5600D1555A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9607B981FDE047800ABDBEC /* friendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friendCollectionViewCell.swift; sourceTree = "<group>"; };
+		A98BCB941FEB37E100E87A43 /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 		A993CA711FC37AD2009E3E2F /* GroupBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBill.swift; sourceTree = "<group>"; };
 		A993CA751FC37D2C009E3E2F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A993CA791FC38AAF009E3E2F /* GroupBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBillViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				FD2837B11FDD0F7D00DD1F83 /* CaptureViewController.swift */,
 				A993CA791FC38AAF009E3E2F /* GroupBillViewController.swift */,
 				FD2837B41FDD0F7E00DD1F83 /* GroupBillsTableViewController.swift */,
+				A98BCB941FEB37E100E87A43 /* AddFriendViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 				E57FE13F1FDEE1460015F391 /* itemListTableViewCell.swift in Sources */,
 				E51CE3871FDB2A01003DE21A /* CategoryRow.swift in Sources */,
 				E54773061FDF16EF00841CFD /* TesseractViewController.swift in Sources */,
+				A98BCB951FEB37E100E87A43 /* AddFriendViewController.swift in Sources */,
 				A93F261B1FDC562C00A142ED /* Friend.swift in Sources */,
 				A993CA7A1FC38AAF009E3E2F /* GroupBillViewController.swift in Sources */,
 			);

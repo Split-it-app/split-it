@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gTH-Fh-c6D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gTH-Fh-c6D">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="PingFang.ttc">
             <string>PingFangHK-Thin</string>
+            <string>PingFangSC-Regular</string>
         </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Just_Split_It" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Split_It" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +90,7 @@
         <!--Capture View Controller-->
         <scene sceneID="FTD-H2-c5C">
             <objects>
-                <viewController id="Yo2-6n-WQF" customClass="CaptureViewController" customModule="Just_Split_It" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Yo2-6n-WQF" customClass="CaptureViewController" customModule="Split_It" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sFl-mz-h2s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,7 +134,7 @@
         <!--Image View Controller-->
         <scene sceneID="7a9-uE-CiO">
             <objects>
-                <viewController id="zik-DV-RS0" customClass="ImageViewController" customModule="Just_Split_It" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zik-DV-RS0" customClass="ImageViewController" customModule="Split_It" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LXP-ZF-Tw2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,7 +182,7 @@
         <!--Raw Data View Controller-->
         <scene sceneID="KWM-zf-lF1">
             <objects>
-                <viewController id="0lb-D8-CW4" customClass="RawDataViewController" customModule="Just_Split_It" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0lb-D8-CW4" customClass="RawDataViewController" customModule="Split_It" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dVn-kD-59u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -227,7 +228,7 @@
         <!--Group Bill View Controller-->
         <scene sceneID="wKj-vN-Mwf">
             <objects>
-                <viewController storyboardIdentifier="GroupBillViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PNg-SV-6e6" customClass="GroupBillViewController" customModule="Just_Split_It" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupBillViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PNg-SV-6e6" customClass="GroupBillViewController" customModule="Split_It" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hKK-4B-wb2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -237,7 +238,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="NiW-lg-y4m" customClass="itemListTableViewCell" customModule="Just_Split_It" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="NiW-lg-y4m" customClass="itemListTableViewCell" customModule="Split_It" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NiW-lg-y4m" id="our-nK-TuX">
@@ -276,7 +277,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="friendCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendListCell" rowHeight="115" id="IdE-Q8-aHP" customClass="CategoryRow" customModule="Just_Split_It" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="friendCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendListCell" rowHeight="115" id="IdE-Q8-aHP" customClass="CategoryRow" customModule="Split_It" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="115"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IdE-Q8-aHP" id="VCn-oP-Iyh">
@@ -293,7 +294,7 @@
                                                         <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="friendCellCollection" id="dnK-de-89P" customClass="friendCollectionViewCell" customModule="Just_Split_It" customModuleProvider="target">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="friendCellCollection" id="dnK-de-89P" customClass="friendCollectionViewCell" customModule="Split_It" customModuleProvider="target">
                                                             <rect key="frame" x="5" y="15" width="91" height="90"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -352,7 +353,7 @@
         <!--Individual Bill View Controller-->
         <scene sceneID="2Js-i4-20n">
             <objects>
-                <viewController id="lf7-sh-6eb" customClass="IndividualBillViewController" customModule="Just_Split_It" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lf7-sh-6eb" customClass="IndividualBillViewController" customModule="Split_It" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hBM-fK-3UM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -363,6 +364,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AC3-Ij-wtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1744.8" y="-158.77061469265368"/>
+        </scene>
+        <!--Add Friend View Controller-->
+        <scene sceneID="jKZ-lZ-EVm">
+            <objects>
+                <viewController storyboardIdentifier="AddFriendViewController" id="cPM-sz-BU6" customClass="AddFriendViewController" customModule="Split_It" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wWh-QL-D9b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Your Friend's Name Here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oYa-42-l1s">
+                                <rect key="frame" x="106" y="138" width="253" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nJJ-jw-9IT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gnN-RU-OCA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1744.8" y="515.8920539730135"/>
         </scene>
         <!--NavigationController-->
         <scene sceneID="aDJ-eg-ngC">
