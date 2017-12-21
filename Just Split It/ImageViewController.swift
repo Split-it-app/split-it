@@ -14,6 +14,8 @@ class ImageViewController: UIViewController {
 	@IBOutlet weak var digitizeButton: UIButton!
 	@IBOutlet weak var imageView: UIImageView!
 	
+    var model: ModelClass = ModelClass()
+    
 	//Variable that's going to receive the UIImage
 	var capturedImageRef: UIImage!
 	var rawTextData: String!
@@ -150,8 +152,11 @@ class ImageViewController: UIViewController {
 		} else if segue.identifier == "showNewBillSegue" {
 			let destination = segue.destination as! GroupBillViewController
 			destination.groupBill = newGroupBill;
+            model.addBill(groupBill: self.newGroupBill)
+            destination.model = self.model
 		}
 	}
+    
 	
 }
 

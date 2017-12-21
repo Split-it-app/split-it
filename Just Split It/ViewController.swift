@@ -182,6 +182,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let row = myIndexPath.row
             GroupBillVC.groupBill =  model.groupBillArray[row]
         }
+        
+        else if (segue.identifier == "VCtoCaptureVC"){
+            let destination = segue.destination as! CaptureViewController
+            destination.model = self.model
+            
+        }
     }
     
     override func didReceiveMemoryWarning() {
